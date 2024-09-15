@@ -1,15 +1,7 @@
-// script.js
 function initialize() {
     const lectureForm = document.getElementById('lectureForm');
     const lectureList = document.getElementById('lectureList');
     const tagFilters = document.getElementById('tagFilters');
-    const languageSelector = document.getElementById('languageSelector');
-
-    if (languageSelector) {
-        languageSelector.addEventListener('change', function() {
-            changeLanguage(this.value);
-        });
-    }
 
     if (lectureForm) {
         lectureForm.addEventListener('submit', function(event) {
@@ -71,10 +63,6 @@ function initialize() {
     }
 
     displayLectures();
-
-    // Set initial language
-    const initialLang = languageSelector ? languageSelector.value : 'en';
-    changeLanguage(initialLang);
 }
 
 function saveLecture(lecture) {
@@ -88,6 +76,7 @@ function deleteLecture(lectureId) {
     lectures = lectures.filter(lecture => lecture.id !== lectureId);
     localStorage.setItem('lectures', JSON.stringify(lectures));
 }
+
 function displayLectures(filterTag = 'all') {
     let lectures = JSON.parse(localStorage.getItem('lectures')) || [];
     const lectureList = document.getElementById('lectureList');
