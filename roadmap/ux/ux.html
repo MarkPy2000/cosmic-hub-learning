@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Design Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>UX Design Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Required Skills -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Understanding UX Design</h3>
+                <ul>
+                    <li>Introduction to UX Design</li>
+                    <li>Principles of User-Centered Design</li>
+                    <li>Design Thinking Methodology</li>
+                    <li>User Research and Personas</li>
+                    <li>Wireframing and Prototyping</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>User Research</h3>
+                <ul>
+                    <li>Qualitative vs. Quantitative Research</li>
+                    <li>User Interviews</li>
+                    <li>Surveys and Questionnaires</li>
+                    <li>Usability Testing</li>
+                    <li>Analyzing Research Findings</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Wireframing and Prototyping</h3>
+                <ul>
+                    <li>Creating Wireframes</li>
+                    <li>Low-Fidelity vs. High-Fidelity Prototypes</li>
+                    <li>Interactive Prototyping Tools (e.g., Figma, Adobe XD)</li>
+                    <li>Usability Testing of Prototypes</li>
+                    <li>Iterative Design Process</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Interaction Design</h3>
+                <ul>
+                    <li>Principles of Interaction Design</li>
+                    <li>Designing for Usability</li>
+                    <li>Creating Effective User Flows</li>
+                    <li>Information Architecture</li>
+                    <li>Microinteractions</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Visual Design</h3>
+                <ul>
+                    <li>Basic Principles of Visual Design</li>
+                    <li>Typography</li>
+                    <li>Color Theory</li>
+                    <li>Layout and Spacing</li>
+                    <li>Design Systems and Style Guides</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Accessibility</h3>
+                <ul>
+                    <li>Understanding Web Accessibility</li>
+                    <li>Designing for Accessibility</li>
+                    <li>Accessibility Guidelines (WCAG)</li>
+                    <li>Testing for Accessibility</li>
+                    <li>Inclusive Design Practices</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>UX Strategy</h3>
+                <ul>
+                    <li>Defining UX Goals and Objectives</li>
+                    <li>Aligning UX with Business Objectives</li>
+                    <li>Creating UX Roadmaps</li>
+                    <li>Stakeholder Management</li>
+                    <li>Metrics and Performance Measurement</li>
+                </ul>
+            </div>
+
+            <!-- Optional Skills -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced User Research</h3>
+                <ul>
+                    <li>Ethnographic Studies</li>
+                    <li>Contextual Inquiry</li>
+                    <li>Advanced Usability Testing Techniques</li>
+                    <li>Advanced Survey Analysis</li>
+                    <li>Behavioral Analytics</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>UX Writing</h3>
+                <ul>
+                    <li>Principles of UX Writing</li>
+                    <li>Creating Effective Microcopy</li>
+                    <li>Content Strategy</li>
+                    <li>Voice and Tone</li>
+                    <li>Writing for Different Platforms</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>UI Design</h3>
+                <ul>
+                    <li>Designing User Interfaces</li>
+                    <li>High-Fidelity Mockups</li>
+                    <li>UI Components and Patterns</li>
+                    <li>Design Systems</li>
+                    <li>Collaboration with Developers</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Behavioral Design</h3>
+                <ul>
+                    <li>Understanding User Behavior</li>
+                    <li>Behavioral Economics</li>
+                    <li>Designing for Habit Formation</li>
+                    <li>Behavioral Insights in Design</li>
+                    <li>Persuasive Design Techniques</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Motion Design</h3>
+                <ul>
+                    <li>Principles of Motion Design</li>
+                    <li>Creating Animations</li>
+                    <li>Animating User Interactions</li>
+                    <li>Tools for Motion Design (e.g., Principle, After Effects)</li>
+                    <li>Designing for Feedback and Engagement</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>UX Research Tools</h3>
+                <ul>
+                    <li>Using Research Tools (e.g., UserTesting, Hotjar)</li>
+                    <li>Data Analysis Tools (e.g., Excel, SPSS)</li>
+                    <li>Survey Tools (e.g., SurveyMonkey, Google Forms)</li>
+                    <li>Behavioral Analytics Platforms (e.g., Mixpanel, Google Analytics)</li>
+                    <li>Research Repository Tools (e.g., Dovetail, Reframer)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Emerging UX Trends</h3>
+                <ul>
+                    <li>Voice User Interfaces (VUIs)</li>
+                    <li>Augmented Reality (AR) UX</li>
+                    <li>Virtual Reality (VR) UX</li>
+                    <li>Personalization and AI in UX</li>
+                    <li>Designing for IoT</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Collaboration and Communication</h3>
+                <ul>
+                    <li>Effective Collaboration with Cross-Functional Teams</li>
+                    <li>Stakeholder Communication</li>
+                    <li>Presenting and Justifying Design Decisions</li>
+                    <li>Facilitating Workshops and Design Sprints</li>
+                    <li>Remote Collaboration Tools (e.g., Miro, Figma)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="ux.js"></script>
+</body>
+</html>
