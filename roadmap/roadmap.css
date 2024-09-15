@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: radial-gradient(circle, #1b2735, #090a0f);
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png'); /* Optional space texture */
+}
+
+/* Roadmap Container */
+.roadmap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Transparent dark background */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #f39c12;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Roadmap Controls */
+.roadmap-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.roadmap-search {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+
+/* Filter Container Buttons */
+.filter-container {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-container button {
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filter-container button:hover {
+    background: linear-gradient(45deg, #2ecc71, #3498db);
+    transform: translateY(-5px);
+}
+
+/* Roadmap Grid */
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.roadmap-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px); /* Adds a glass effect */
+}
+
+.roadmap-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Collapsible Headers */
+.roadmap-item h3 {
+    color: #3498db;
+    margin-top: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.roadmap-item h3::after {
+    content: '\25BC';
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+    color: #f39c12;
+}
+
+.roadmap-item.collapsed h3::after {
+    transform: rotate(-90deg);
+}
+
+/* Roadmap List */
+.roadmap-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.roadmap-item.collapsed ul {
+    max-height: 0;
+}
+
+/* List Items */
+.roadmap-item li {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.roadmap-item li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+}
+
+/* Required and Optional Category Indicators */
+[data-category="required"] {
+    border-left: 5px solid #f39c12;
+}
+
+[data-category="optional"] {
+    border-left: 5px solid #2ecc71;
+}
+
+/* Stars Animation Background */
+@keyframes stars {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.5;
+    z-index: -1;
+    animation: stars 60s linear infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .roadmap {
+        grid-template-columns: 1fr;
+    }
+}
+
