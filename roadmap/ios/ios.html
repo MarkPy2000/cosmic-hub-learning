@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS App Development Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>iOS App Development Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Required Skills -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Swift Programming Language</h3>
+                <ul>
+                    <li>Syntax and Basic Constructs</li>
+                    <li>Optionals and Error Handling</li>
+                    <li>Object-Oriented Programming (OOP)</li>
+                    <li>Protocols and Extensions</li>
+                    <li>Memory Management (ARC)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Xcode IDE</h3>
+                <ul>
+                    <li>Setting Up Xcode</li>
+                    <li>Interface Builder and Storyboards</li>
+                    <li>Debugging Tools</li>
+                    <li>Simulator Usage</li>
+                    <li>Build and Archive</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>UIKit Framework</h3>
+                <ul>
+                    <li>View Controllers</li>
+                    <li>UI Elements (Buttons, Labels, etc.)</li>
+                    <li>Auto Layout and Constraints</li>
+                    <li>Table Views and Collection Views</li>
+                    <li>Gesture Recognizers</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Persistence</h3>
+                <ul>
+                    <li>UserDefaults</li>
+                    <li>Core Data</li>
+                    <li>SQLite</li>
+                    <li>File Management</li>
+                    <li>Data Synchronization</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Networking</h3>
+                <ul>
+                    <li>URLSession for HTTP Requests</li>
+                    <li>Parsing JSON/XML Data</li>
+                    <li>RESTful APIs Integration</li>
+                    <li>Authentication and Authorization</li>
+                    <li>Handling Network Errors</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Testing and Debugging</h3>
+                <ul>
+                    <li>Unit Testing with XCTest</li>
+                    <li>UI Testing</li>
+                    <li>Debugging Techniques</li>
+                    <li>Performance Testing</li>
+                    <li>Crash Reporting</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>App Distribution</h3>
+                <ul>
+                    <li>App Store Guidelines</li>
+                    <li>Creating App Store Listings</li>
+                    <li>Managing App Certificates and Provisioning Profiles</li>
+                    <li>Beta Testing with TestFlight</li>
+                    <li>Submission and Review Process</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Design Principles</h3>
+                <ul>
+                    <li>Human Interface Guidelines (HIG)</li>
+                    <li>Designing for Different Screen Sizes</li>
+                    <li>Touch and Gesture Interactions</li>
+                    <li>Accessibility Features</li>
+                    <li>App Icon and Launch Screen Design</li>
+                </ul>
+            </div>
+
+            <!-- Optional Skills -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>SwiftUI Framework</h3>
+                <ul>
+                    <li>Declarative Syntax</li>
+                    <li>Building Views with SwiftUI</li>
+                    <li>State Management</li>
+                    <li>Combine Framework Integration</li>
+                    <li>Animations and Transitions</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced UIKit</h3>
+                <ul>
+                    <li>Custom UI Components</li>
+                    <li>Animations and Advanced UI Effects</li>
+                    <li>Custom View Controllers</li>
+                    <li>Advanced Layout Techniques</li>
+                    <li>View Controller Lifecycle</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Integration with External Libraries</h3>
+                <ul>
+                    <li>CocoaPods and Carthage</li>
+                    <li>Swift Package Manager (SPM)</li>
+                    <li>Third-Party SDKs (Firebase, Alamofire)</li>
+                    <li>Analytics and Crash Reporting Tools</li>
+                    <li>UI Frameworks and Components</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>App Architecture</h3>
+                <ul>
+                    <li>Model-View-Controller (MVC)</li>
+                    <li>Model-View-ViewModel (MVVM)</li>
+                    <li>Coordinator Pattern</li>
+                    <li>Dependency Injection</li>
+                    <li>Managing Large Projects</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Push Notifications and Messaging</h3>
+                <ul>
+                    <li>Implementing Push Notifications</li>
+                    <li>Handling Notifications</li>
+                    <li>In-App Messaging</li>
+                    <li>Custom Notification Actions</li>
+                    <li>Remote Notification Configuration</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Augmented Reality (AR)</h3>
+                <ul>
+                    <li>ARKit Basics</li>
+                    <li>Creating AR Experiences</li>
+                    <li>Tracking and Anchoring</li>
+                    <li>3D Model Integration</li>
+                    <li>AR Scene Understanding</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Machine Learning Integration</h3>
+                <ul>
+                    <li>Core ML Framework</li>
+                    <li>Creating Custom Models</li>
+                    <li>Integrating ML Models in Apps</li>
+                    <li>Vision Framework for Image Analysis</li>
+                    <li>Natural Language Processing</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>App Performance Optimization</h3>
+                <ul>
+                    <li>Profiling and Analyzing Performance</li>
+                    <li>Memory Management</li>
+                    <li>Reducing App Launch Time</li>
+                    <li>Optimizing Network Requests</li>
+                    <li>Improving Battery Efficiency</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Internationalization and Localization</h3>
+                <ul>
+                    <li>Supporting Multiple Languages</li>
+                    <li>Localizing Strings and Assets</li>
+                    <li>Handling Different Region Formats</li>
+                    <li>Testing Localization</li>
+                    <li>Ensuring Accessibility Across Regions</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>App Analytics and Monitoring</h3>
+                <ul>
+                    <li>Integrating Analytics Tools (Firebase Analytics, Mixpanel)</li>
+                    <li>Monitoring User Behavior</li>
+                    <li>Tracking In-App Events</li>
+                    <li>Understanding User Retention</li>
+                    <li>Data-Driven Decision Making</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="ios.js"></script>
+</body>
+</html>
