@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How the Web Works - Space Edition</title>
+    <link rel="stylesheet" href="infor.css">
+</head>
+<body>
+
+    <header class="space-header">
+        <h1>How the Web Works</h1>
+        <p>A journey through the web, presented with a cosmic twist.</p>
+    </header>
+
+    <section class="info-section">
+        <div class="section-content">
+            <h2>Clients and Servers</h2>
+            <p>Computers connected to the internet are called <strong>clients</strong> and <strong>servers</strong>. A simplified diagram of how they interact might look like this:</p>
+            <img src="r1diagram.png" alt="Client-server diagram">
+            <p>Clients are the typical web user’s internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).</p>
+            <p>Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</p>
+        </div>
+
+        <div class="section-content">
+            <h2>The Other Parts of the Toolbox</h2>
+            <p>In addition to the client and the server, there are several other components that make the web work:</p>
+            <ul>
+                <li><strong>Your Internet Connection:</strong> Allows you to send and receive data on the web, similar to the street connecting your house and a shop.</li>
+                <li><strong>TCP/IP:</strong> These are communication protocols that define how data travels across the internet. Think of them like a car or a bike that transports you from place to place.</li>
+                <li><strong>DNS:</strong> Domain Name System is an address book for websites, helping your browser find the IP address of a website.</li>
+                <li><strong>HTTP:</strong> Hypertext Transfer Protocol defines the language clients and servers use to speak to each other.</li>
+                <li><strong>Component Files:</strong> Websites are made up of code files (HTML, CSS, JavaScript) and assets (images, music, videos, etc.).</li>
+            </ul>
+            <img src="r2diagram.png" alt="Crossing the road analogy">
+        </div>
+
+        <div class="section-content">
+            <h2>DNS Explained</h2>
+            <p>Real web addresses aren’t the memorable strings you type into your address bar, like "mozilla.org". These are known as IP addresses, which are represented as numbers like `192.0.2.172`.</p>
+            <p>The Domain Name System (DNS) converts these IP addresses into human-readable web addresses, making it easier to navigate the internet. Websites can be accessed directly via their IP addresses, but DNS allows us to use simpler names instead.</p>
+        </div>
+
+        <div class="section-content">
+            <h2>Packets Explained</h2>
+            <p>Data transferred between the client and server is broken down into small chunks called "packets". These packets allow faster and more reliable communication. If packets are lost or corrupted during transfer, only small portions of the data need to be retransmitted instead of the entire file. This also allows multiple users to download the same website at the same time.</p>
+        </div>
+
+        <div class="section-content">
+            <h2>Order in which Component Files are Parsed</h2>
+            <p>When a browser sends requests to a server for an HTML file, that file often contains references to external CSS and JavaScript files. The browser follows a specific order for parsing these files:</p>
+            <ul>
+                <li>The browser first parses the HTML file.</li>
+                <li>As it parses, the browser sends requests for any CSS and JavaScript files referenced in the HTML.</li>
+                <li>The browser builds an in-memory Document Object Model (DOM) tree from the HTML, a CSSOM tree from the CSS, and compiles the JavaScript.</li>
+                <li>Once the browser processes the files, the page is displayed to the user and becomes interactive.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="space-footer">
+        <p>© 2024 Cosmic Web Insights</p>
+    </footer>
+
+    <div class="stars"></div>
+
+    <script src="infor.js"></script>
+
+    <script>
+        // Create stars dynamically
+        const starsContainer = document.querySelector('.stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            starsContainer.appendChild(star);
+        }
+    </script>
+
+</body>
+</html>
