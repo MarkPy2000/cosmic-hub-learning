@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Programming Language - Interactive Website</title>
+    <link rel="stylesheet" href="../Home/styles.css">
+</head>
+<body>
+    <!-- Add particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Add shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Add cosmic dust -->
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+
+    <header>
+        <h1 class="glitch-text" data-text="C++ Programming Language">C++ Programming Language</h1>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html" class="glitch-text" data-text="Home">Home</a></li>
+                <li><a href="../Home/lectures.html" class="glitch-text" data-text="Lectures">Lectures</a></li>
+                <li><a href="python.html" class="glitch-text" data-text="Python">Python</a></li>
+                <li><a href="java.html" class="glitch-text" data-text="Java">Java</a></li>
+                <li><a href="C.html" class="glitch-text" data-text="C">C</a></li>
+                <li><a href="Cpp.html" class="glitch-text" data-text="C++">C++</a></li>
+                <li><a href="roadmap.html" class="glitch-text" data-text="Roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="parallax-section nebula-bg">
+        <section id="cpp-guide">
+            <div class="container">
+                <h2 class="welcome-message">Welcome to the C++ Dimension of the C Universe!</h2>
+                <p>C++ is a powerful, high-performance language that extends the C programming language with features like object-oriented, generic, and functional programming.</p>
+
+                <h3>C++ Fundamentals</h3>
+                <p>Start your C++ journey with these core concepts:</p>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/en-us/cpp/cpp/basic-concepts-cpp?view=msvc-170" target="_blank" class="glitch-text" data-text="Basic Concepts">Basic Concepts</a> - Learn about data types, operators, and control structures. For example, here's how to use a simple `if-else` statement:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+int x = 10;
+if (x > 5) {
+    std::cout << "x is greater than 5";
+} else {
+    std::cout << "x is 5 or less";
+}
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/objects" target="_blank" class="glitch-text" data-text="Objects and Types">Objects and Types</a> - C++ introduces the concept of objects that encapsulate data and functions. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+class Car {
+public:
+    string model;
+    void start() {
+        std::cout << "Car started!";
+    }
+};
+Car myCar;
+myCar.model = "Toyota";
+myCar.start();
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/declarations" target="_blank" class="glitch-text" data-text="Declarations and Definitions">Declarations and Definitions</a> - Learn how to declare variables and functions. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+int add(int a, int b); // Declaration
+int add(int a, int b) { // Definition
+    return a + b;
+}
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/functions" target="_blank" class="glitch-text" data-text="Functions">Functions</a> - Functions are reusable blocks of code. Here's how to define a function that calculates the square of a number:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+int square(int x) {
+    return x * x;
+}
+                        </code></pre>
+                    </div>
+                </ul>
+
+                <h3>Object-Oriented Programming in C++</h3>
+                <p>Explore object-oriented programming features in C++:</p>
+                <ul>
+                    <li><a href="https://learn.microsoft.com/en-us/cpp/cpp/classes-and-structs-cpp?view=msvc-170" target="_blank" class="glitch-text" data-text="Classes and Structs">Classes and Structs</a> - Classes allow you to create complex data structures with functions and variables. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+class Dog {
+    public:
+    string name;
+    void bark() {
+        std::cout << name << " says Woof!";
+    }
+};
+Dog myDog;
+myDog.name = "Buddy";
+myDog.bark();
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/inheritance" target="_blank" class="glitch-text" data-text="Inheritance">Inheritance</a> - Inheritance allows one class to inherit properties and behavior from another class:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+class Animal {
+public:
+    void eat() { std::cout << "Eating"; }
+};
+class Dog : public Animal {
+    void bark() { std::cout << "Woof!"; }
+};
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/polymorphism" target="_blank" class="glitch-text" data-text="Polymorphism">Polymorphism</a> - Polymorphism allows objects to be treated as instances of their base type. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+class Animal {
+public:
+    virtual void speak() { std::cout << "Some sound"; }
+};
+class Dog : public Animal {
+public:
+    void speak() override { std::cout << "Bark"; }
+};
+Animal* animal = new Dog();
+animal->speak();  // Output: Bark
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/abstract_class" target="_blank" class="glitch-text" data-text="Abstract Classes">Abstract Classes</a> - Abstract classes provide a way to define an interface without implementing the details. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+class Shape {
+public:
+    virtual void draw() = 0; // Pure virtual function
+};
+class Circle : public Shape {
+    void draw() override { std::cout << "Drawing a circle"; }
+};
+                        </code></pre>
+                    </div>
+                </ul>
+
+                <h3>Advanced C++ Features</h3>
+                <p>Dive into advanced C++ programming concepts:</p>
+                <ul>
+                    <li><a href="https://en.cppreference.com/w/cpp/language/templates" target="_blank" class="glitch-text" data-text="Templates">Templates</a> - Templates allow you to write generic functions and classes. Example of a template function:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+std::cout << add(5, 10); // Works for integers
+std::cout << add(2.5, 3.5); // Works for floats
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/exceptions" target="_blank" class="glitch-text" data-text="Exception Handling">Exception Handling</a> - Handle errors gracefully using try-catch blocks. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+try {
+    int x = -1;
+    if (x < 0) throw std::runtime_error("Negative number");
+} catch (const std::exception& e) {
+    std::cout << e.what();
+}
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/lambda" target="_blank" class="glitch-text" data-text="Lambda Expressions">Lambda Expressions</a> - Lambda expressions provide a concise way to write anonymous functions. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+auto square = [](int x) { return x * x; };
+std::cout << square(5);
+                        </code></pre>
+                    </div>
+
+                    <li><a href="https://en.cppreference.com/w/cpp/language/move_constructor" target="_blank" class="glitch-text" data-text="Move Semantics">Move Semantics</a> - Move semantics improve performance by transferring resources rather than copying them. Example:</li>
+                    <div class="frame-cover">
+                        <pre><code>
+std::string str = "Hello";
+std::string movedStr = std::move(str);
+                        </code></pre>
+                    </div>
+                </ul>
+
+                <a href="https://devdocs.io/cpp/" target="_blank" class="button">Explore More C++ Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Home/script.js"></script>
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 1, direction: "none", random: true, out_mode: "out" }
+            }
+        });
+    </script>
+</body>
+</html>

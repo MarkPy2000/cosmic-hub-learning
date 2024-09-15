@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Learning Hub - Interactive Website</title>
+    <link rel="stylesheet" href="../Home/styles.css">
+</head>
+<body>
+    <!-- Add particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Add shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Add cosmic dust -->
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+
+    <header>
+        <h1 class="glitch-text" data-text="Java Learning Hub">Java Learning Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html" class="glitch-text" data-text="Home">Home</a></li>
+                <li><a href="../Home/lectures.html" class="glitch-text" data-text="Lectures">Lectures</a></li>
+                <li><a href="python.html" class="glitch-text" data-text="Python">Python</a></li>
+                <li><a href="java.html" class="glitch-text" data-text="Java">Java</a></li>
+                <li><a href="C.html" class="glitch-text" data-text="C">C</a></li>
+                <li><a href="Cpp.html" class="glitch-text" data-text="C++">C++</a></li>
+                <li><a href="roadmap.html" class="glitch-text" data-text="Roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="parallax-section nebula-bg">
+        <section id="java-guide">
+            <div class="container">
+                <h2 class="welcome-message">Welcome to the Java Galaxy!</h2>
+                <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.</p>
+
+                <h3>Getting Started with Java</h3>
+                <p>If you're new to Java, start with these fundamental concepts:</p>
+                <ul>
+                    <li><a href="https://dev.java/learn/getting-started/" target="_blank" class="glitch-text" data-text="Getting Started with Java">Getting Started with Java</a></li>
+                    <li><a href="https://dev.java/learn/language-basics/" target="_blank" class="glitch-text" data-text="Language Basics">Language Basics</a></li>
+                    <li><a href="https://dev.java/learn/oop/" target="_blank" class="glitch-text" data-text="Object-Oriented Programming">Object-Oriented Programming</a></li>
+                </ul>
+
+                <h3>Java Basics</h3>
+                <p>Here are some Java basics with code examples to get you started:</p>
+
+                <h4>1. Hello World</h4>
+                <div class="frame-cover">
+                    <pre><code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+                    </code></pre>
+                </div>
+
+                <h4>2. Variables and Data Types</h4>
+                <p>Java has strong data types, meaning that each variable needs to be declared with its type.</p>
+                <div class="frame-cover">
+                    <pre><code>
+int age = 30;
+String name = "Alice";
+double salary = 85000.50;
+boolean isEmployed = true;
+
+System.out.println(age + ", " + name + ", " + salary + ", " + isEmployed);
+                    </code></pre>
+                </div>
+
+                <h4>3. Control Flow (if-else)</h4>
+                <p>Use `if`, `else if`, and `else` to control the flow of your Java programs.</p>
+                <div class="frame-cover">
+                    <pre><code>
+int number = 10;
+
+if (number > 0) {
+    System.out.println("Positive number");
+} else if (number < 0) {
+    System.out.println("Negative number");
+} else {
+    System.out.println("Zero");
+}
+                    </code></pre>
+                </div>
+
+                <h4>4. Loops</h4>
+                <p>Java has different types of loops like `for`, `while`, and `do-while` to repeat actions.</p>
+                <div class="frame-cover">
+                    <pre><code>
+// For loop
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+
+// While loop
+int count = 0;
+while (count < 5) {
+    System.out.println(count);
+    count++;
+}
+                    </code></pre>
+                </div>
+
+                <h4>5. Methods</h4>
+                <p>Methods in Java allow code to be organized into reusable functions.</p>
+                <div class="frame-cover">
+                    <pre><code>
+public class Main {
+    public static void main(String[] args) {
+        greet("Alice");
+        greet("Bob");
+    }
+
+    public static void greet(String name) {
+        System.out.println("Hello, " + name);
+    }
+}
+                    </code></pre>
+                </div>
+
+                <h3>Core Java Concepts</h3>
+                <p>Explore these core Java topics to deepen your understanding:</p>
+                <ul>
+                    <li><a href="https://dev.java/learn/generics/" target="_blank" class="glitch-text" data-text="Generics">Generics</a></li>
+                    <li><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html" target="_blank" class="glitch-text" data-text="Collections Framework">Collections Framework</a></li>
+                    <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" target="_blank" class="glitch-text" data-text="Lambda Expressions">Lambda Expressions</a></li>
+                    <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" target="_blank" class="glitch-text" data-text="Streams API">Streams API</a></li>
+                </ul>
+
+                <h3>Advanced Java Topics</h3>
+                <p>Ready for more advanced concepts? Check out these topics:</p>
+                <ul>
+                    <li><a href="https://www.baeldung.com/java-concurrency" target="_blank" class="glitch-text" data-text="Concurrency">Concurrency</a></li>
+                    <li><a href="https://dev.java/learn/security/" target="_blank" class="glitch-text" data-text="Security">Security</a></li>
+                    <li><a href="https://docs.oracle.com/javase/tutorial/networking/overview/networking.html" target="_blank" class="glitch-text" data-text="Networking">Networking</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/introduction-to-jdbc/" target="_blank" class="glitch-text" data-text="JDBC">JDBC (Java Database Connectivity)</a></li>
+                </ul>
+
+                <h3>Java Development Tools</h3>
+                <p>Get familiar with essential Java development tools:</p>
+                <ul>
+                    <li><a href="https://www.oracle.com/java/technologies/downloads/" target="_blank" class="glitch-text" data-text="JDK">Java Development Kit (JDK)</a></li>
+                    <li><a href="https://www.jetbrains.com/idea/" target="_blank" class="glitch-text" data-text="IntelliJ IDEA">IntelliJ IDEA</a></li>
+                    <li><a href="https://www.eclipse.org/downloads/" target="_blank" class="glitch-text" data-text="Eclipse IDE">Eclipse IDE</a></li>
+                    <li><a href="https://maven.apache.org/" target="_blank" class="glitch-text" data-text="Maven">Apache Maven</a></li>
+                </ul>
+
+                <h3>Java Community and Resources</h3>
+                <p>Connect with the Java community and find more resources:</p>
+                <ul>
+                    <li><a href="https://dev.java/" target="_blank" class="glitch-text" data-text="Java Developer Portal">Java Developer Portal</a></li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/java" target="_blank" class="glitch-text" data-text="Stack Overflow">Stack Overflow Java Questions</a></li>
+                    <li><a href="https://www.oracle.com/java/technologies/javase-documentation.html" target="_blank" class="glitch-text" data-text="Java Documentation">Java Documentation</a></li>
+                </ul>
+
+                <a href="https://dev.java/learn/" target="_blank" class="button">Explore More Java Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Home/script.js"></script>
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 1, direction: "none", random: true, out_mode: "out" }
+            }
+        });
+    </script>
+</body>
+</html>

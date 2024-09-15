@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pythonTitle">Python for Beginners - Interactive Website</title>
+    <link rel="stylesheet" href="../Home/styles.css">
+</head>
+<body>
+    <!-- Add particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Add shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Add cosmic dust -->
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+
+    <header>
+        <h1 data-translate="pythonHeader" class="glitch-text" data-text="Python for Beginners">Python for Beginners</h1>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html" data-translate="home" class="glitch-text" data-text="Home">Home</a></li>
+                <li><a href="../Home/lectures.html" data-translate="lectures" class="glitch-text" data-text="Lectures">Lectures</a></li>
+                <li><a href="python.html" data-translate="python" class="glitch-text" data-text="Python">Python</a></li>
+                <li><a href="java.html" data-translate="java" class="glitch-text" data-text="Java">Java</a></li>
+                <li><a href="C.html" data-translate="c" class="glitch-text" data-text="C">C</a></li>
+                <li><a href="Cpp.html" data-translate="cpp" class="glitch-text" data-text="C++">C++</a></li>
+                <li><a href="roadmap.html" data-translate="roadmap" class="glitch-text" data-text="Roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+        <!-- Language selector -->
+        <select id="languageSelector">
+            <option value="en">English</option>
+            <option value="th">ภาษาไทย</option>
+        </select>
+    </header>
+
+    <main class="parallax-section nebula-bg">
+        <section id="python-guide">
+            <div class="container">
+                <h2 data-translate="welcomePython" class="welcome-message">Welcome to the Python Universe!</h2>
+                <p data-translate="pythonDescription">Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.</p>
+
+                <h3 data-translate="pythonFeatures">Some of Python's notable features:</h3>
+                <ul>
+                    <li data-translate="feature1">Uses an elegant syntax, making the programs you write easier to read.</li>
+                    <li data-translate="feature2">Is an easy-to-use language that makes it simple to get your program working.</li>
+                    <li data-translate="feature3">Comes with a large standard library that supports many common programming tasks.</li>
+                    <li data-translate="feature4">Is ideal for prototype development and other ad-hoc programming tasks.</li>
+                    <li data-translate="feature5">Works on all major operating systems.</li>
+                </ul>
+
+                <h3 data-translate="gettingStarted">Getting Started</h3>
+                <p data-translate="newToProgramming">Are you new to programming? If you're brand new to programming, you might want to start with these beginner's resources:</p>
+                <ul>
+                    <li><a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers" target="_blank" data-translate="nonProgrammersGuide" class="glitch-text" data-text="The Non-Programmer's Guide to Python">The Non-Programmer's Guide to Python</a></li>
+                    <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank" data-translate="programmersGuide" class="glitch-text" data-text="The Programmer's Guide to Python">The Programmer's Guide to Python</a></li>
+                </ul>
+
+                <h3 data-translate="installingPython">Installing Python</h3>
+                <p data-translate="installInstructions">Depending on your operating system, you might already have Python installed. If not, you can download it from the official Python website:</p>
+                <a href="https://www.python.org/downloads/" target="_blank" class="button" data-translate="downloadPython">Download Python</a>
+
+                <h3 data-translate="learningPython">Learning Python</h3>
+                <p data-translate="learningResources">Here are some great resources to start learning Python:</p>
+                <ul>
+                    <li><a href="https://docs.python.org/3/tutorial/" target="_blank" data-translate="pythonTutorial" class="glitch-text" data-text="The Python Tutorial">The Python Tutorial</a> (from Python.org)</li>
+                    <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers#Online_Tutorials" target="_blank" data-translate="onlineTutorials" class="glitch-text" data-text="Online Python Tutorials">Online Python Tutorials</a></li>
+                    <li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers#Books_for_Beginners" target="_blank" data-translate="pythonBooks" class="glitch-text" data-text="Python Books for Beginners">Python Books for Beginners</a></li>
+                </ul>
+
+                <h3 data-translate="pythonBasics">Python Basics</h3>
+                <p data-translate="basicExamples">Start learning Python with these basic examples:</p>
+
+                <div class="frame-cover">
+                    <h4 data-translate="helloWorld">1. Hello World</h4>
+                    <pre><code>
+# This prints a simple message to the screen
+print("Hello, World!")
+                    </code></pre>
+
+                    <h4 data-translate="variablesDataTypes">2. Variables and Data Types</h4>
+                    <p data-translate="variablesExplanation">Python automatically detects the type of variable you're working with.</p>
+                    <pre><code>
+# Integer
+age = 25
+
+# String
+name = "Alice"
+
+# Float
+height = 5.9
+
+# Boolean
+is_student = True
+
+print(age, name, height, is_student)
+                    </code></pre>
+
+                    <h4 data-translate="conditionalStatements">3. Conditional Statements</h4>
+                    <p data-translate="conditionalExplanation">Use `if`, `elif`, and `else` to control the flow of your program.</p>
+                    <pre><code>
+x = 10
+
+if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")
+                    </code></pre>
+
+                    <h4 data-translate="loops">4. Loops</h4>
+                    <p data-translate="loopsExplanation">Loops allow you to repeat tasks. Python has two types of loops: `for` and `while`.</p>
+                    <pre><code>
+# For loop
+for i in range(5):
+    print(i)
+
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+                    </code></pre>
+
+                    <h4 data-translate="functions">5. Functions</h4>
+                    <p data-translate="functionsExplanation">Functions allow you to write reusable blocks of code.</p>
+                    <pre><code>
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+print(greet("Bob"))
+                    </code></pre>
+                </div>
+
+                <h3 data-translate="pythonCommunities">Python Communities</h3>
+                <p data-translate="communitiesExplanation">Join these communities to get help and connect with other Python enthusiasts:</p>
+                <ul>
+                    <li><a href="https://www.python.org/community/" target="_blank" data-translate="pythonOrgCommunity" class="glitch-text" data-text="Python.org Community">Python.org Community</a></li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank" data-translate="stackOverflow" class="glitch-text" data-text="Stack Overflow Python Questions">Stack Overflow Python Questions</a></li>
+                    <li><a href="https://www.reddit.com/r/learnpython/" target="_blank" data-translate="redditLearnPython" class="glitch-text" data-text="r/learnpython on Reddit">r/learnpython on Reddit</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Home/script.js"></script>
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            // Configuration options for particles
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 1, direction: "none", random: true, out_mode: "out" }
+            }
+        });
+    </script>
+</body>
+</html>
