@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Cybersecurity Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Required Skills -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Fundamentals of Cybersecurity</h3>
+                <ul>
+                    <li>Understanding Cybersecurity Principles</li>
+                    <li>Risk Management</li>
+                    <li>Types of Threats and Attacks</li>
+                    <li>Basic Security Concepts</li>
+                    <li>Security Policies and Procedures</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Network Security</h3>
+                <ul>
+                    <li>Understanding Network Protocols</li>
+                    <li>Firewalls and VPNs</li>
+                    <li>Intrusion Detection Systems (IDS)</li>
+                    <li>Network Segmentation</li>
+                    <li>Secure Network Design</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Cryptography</h3>
+                <ul>
+                    <li>Symmetric and Asymmetric Encryption</li>
+                    <li>Hash Functions</li>
+                    <li>Public Key Infrastructure (PKI)</li>
+                    <li>Digital Signatures</li>
+                    <li>Cryptographic Protocols (SSL/TLS)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Operating System Security</h3>
+                <ul>
+                    <li>Security Features of Operating Systems</li>
+                    <li>Patch Management</li>
+                    <li>File System Permissions</li>
+                    <li>Account and Access Management</li>
+                    <li>Auditing and Monitoring</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Application Security</h3>
+                <ul>
+                    <li>Secure Coding Practices</li>
+                    <li>Common Vulnerabilities (e.g., OWASP Top 10)</li>
+                    <li>Threat Modeling</li>
+                    <li>Security Testing (e.g., Static and Dynamic Analysis)</li>
+                    <li>Secure Development Lifecycle</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Incident Response</h3>
+                <ul>
+                    <li>Incident Detection and Analysis</li>
+                    <li>Response Planning</li>
+                    <li>Forensics and Evidence Collection</li>
+                    <li>Recovery and Post-Incident Activities</li>
+                    <li>Legal and Regulatory Compliance</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Ethical Hacking</h3>
+                <ul>
+                    <li>Penetration Testing</li>
+                    <li>Vulnerability Assessment</li>
+                    <li>Social Engineering</li>
+                    <li>Security Tools (e.g., Metasploit, Nmap)</li>
+                    <li>Reporting and Documentation</li>
+                </ul>
+            </div>
+
+            <!-- Optional Skills -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Cloud Security</h3>
+                <ul>
+                    <li>Cloud Security Principles</li>
+                    <li>Identity and Access Management (IAM)</li>
+                    <li>Data Protection in the Cloud</li>
+                    <li>Cloud Compliance and Governance</li>
+                    <li>Cloud Security Tools and Services</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Cryptography</h3>
+                <ul>
+                    <li>Advanced Encryption Algorithms</li>
+                    <li>Homomorphic Encryption</li>
+                    <li>Quantum Cryptography</li>
+                    <li>Key Management Solutions</li>
+                    <li>Cryptographic Attacks and Countermeasures</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Security Operations</h3>
+                <ul>
+                    <li>Security Information and Event Management (SIEM)</li>
+                    <li>Security Operations Center (SOC) Management</li>
+                    <li>Threat Hunting</li>
+                    <li>Security Automation and Orchestration</li>
+                    <li>Log Management</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Privacy and Compliance</h3>
+                <ul>
+                    <li>Data Privacy Regulations (e.g., GDPR, CCPA)</li>
+                    <li>Compliance Frameworks (e.g., NIST, ISO 27001)</li>
+                    <li>Privacy Impact Assessments</li>
+                    <li>Data Handling and Protection</li>
+                    <li>Legal and Ethical Considerations</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Threats and APTs</h3>
+                <ul>
+                    <li>Understanding Advanced Persistent Threats (APTs)</li>
+                    <li>Threat Intelligence</li>
+                    <li>Malware Analysis</li>
+                    <li>Advanced Persistent Threat Mitigation</li>
+                    <li>Case Studies and Real-World Examples</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Security Research</h3>
+                <ul>
+                    <li>Vulnerability Research</li>
+                    <li>Exploit Development</li>
+                    <li>Bug Bounty Programs</li>
+                    <li>Security Research Methodologies</li>
+                    <li>Publishing and Sharing Findings</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>IoT Security</h3>
+                <ul>
+                    <li>Security Challenges in IoT</li>
+                    <li>IoT Protocols and Standards</li>
+                    <li>IoT Threats and Vulnerabilities</li>
+                    <li>Securing IoT Devices</li>
+                    <li>IoT Security Best Practices</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Security for Emerging Technologies</h3>
+                <ul>
+                    <li>Security Implications of Artificial Intelligence</li>
+                    <li>Blockchain Security</li>
+                    <li>Quantum Computing and Security</li>
+                    <li>5G Security</li>
+                    <li>Augmented Reality (AR) and Virtual Reality (VR) Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="cyber.js"></script>
+</body>
+</html>
