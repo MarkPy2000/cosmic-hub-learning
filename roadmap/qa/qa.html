@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Engineer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>QA Engineer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- QA Fundamentals -->
+            <div class="roadmap-item" data-category="required">
+                <h3>QA Fundamentals</h3>
+                <ul>
+                    <li>What is Quality Assurance?</li>
+                    <li>QA vs QC vs Testing</li>
+                    <li>Understanding SDLC (Software Development Life Cycle)</li>
+                    <li>Waterfall vs Agile Testing</li>
+                    <li>Test Plan and Test Cases</li>
+                    <li>Bug Life Cycle</li>
+                </ul>
+            </div>
+
+            <!-- Types of Testing -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Types of Testing</h3>
+                <ul>
+                    <li>Manual Testing</li>
+                    <li>Automated Testing</li>
+                    <li>Functional Testing</li>
+                    <li>Non-Functional Testing</li>
+                    <li>Unit Testing</li>
+                    <li>Integration Testing</li>
+                    <li>System Testing</li>
+                    <li>User Acceptance Testing (UAT)</li>
+                </ul>
+            </div>
+
+            <!-- Testing Tools -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Testing Tools</h3>
+                <ul>
+                    <li>Selenium WebDriver</li>
+                    <li>JUnit/NUnit</li>
+                    <li>TestNG</li>
+                    <li>Cucumber</li>
+                    <li>Postman (API Testing)</li>
+                    <li>JMeter (Performance Testing)</li>
+                </ul>
+            </div>
+
+            <!-- Test Automation -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Test Automation</h3>
+                <ul>
+                    <li>Introduction to Test Automation</li>
+                    <li>Automation Frameworks (Keyword-Driven, Data-Driven, Hybrid)</li>
+                    <li>CI/CD and Automation</li>
+                    <li>Understanding Selenium</li>
+                    <li>Automation Best Practices</li>
+                </ul>
+            </div>
+
+            <!-- Performance Testing -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Performance Testing</h3>
+                <ul>
+                    <li>Introduction to Performance Testing</li>
+                    <li>Types of Performance Testing (Load, Stress, Spike)</li>
+                    <li>Performance Testing Tools (JMeter, Gatling)</li>
+                    <li>Metrics for Performance Testing</li>
+                    <li>Analyzing Results</li>
+                </ul>
+            </div>
+
+            <!-- Security Testing -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Security Testing</h3>
+                <ul>
+                    <li>Introduction to Security Testing</li>
+                    <li>OWASP Top 10</li>
+                    <li>Vulnerability Scanning Tools</li>
+                    <li>SQL Injection, Cross-Site Scripting (XSS)</li>
+                    <li>Penetration Testing</li>
+                </ul>
+            </div>
+
+            <!-- Mobile Testing -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Mobile Testing</h3>
+                <ul>
+                    <li>Introduction to Mobile Testing</li>
+                    <li>Mobile Testing Types (Functional, Non-Functional, UI)</li>
+                    <li>Mobile Testing Tools (Appium, Espresso)</li>
+                    <li>Testing on Real Devices vs Emulators</li>
+                </ul>
+            </div>
+
+            <!-- API Testing -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>API Testing</h3>
+                <ul>
+                    <li>What is API Testing?</li>
+                    <li>Types of API Testing (Functional, Load, Security)</li>
+                    <li>Tools for API Testing (Postman, SoapUI)</li>
+                    <li>Validating API Responses</li>
+                    <li>Writing Automated API Tests</li>
+                </ul>
+            </div>
+
+            <!-- CI/CD for QA -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>CI/CD for QA</h3>
+                <ul>
+                    <li>Continuous Integration and Continuous Delivery (CI/CD)</li>
+                    <li>Using Jenkins for Automation</li>
+                    <li>Integrating QA with CI/CD Pipeline</li>
+                    <li>Automated Testing in CI/CD</li>
+                    <li>Version Control and QA</li>
+                </ul>
+            </div>
+
+            <!-- Exploratory Testing -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Exploratory Testing</h3>
+                <ul>
+                    <li>What is Exploratory Testing?</li>
+                    <li>When and How to Perform Exploratory Testing</li>
+                    <li>Heuristics in Exploratory Testing</li>
+                    <li>Tools for Exploratory Testing</li>
+                    <li>Exploratory Testing Techniques</li>
+                </ul>
+            </div>
+
+            <!-- Test Reporting -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Test Reporting</h3>
+                <ul>
+                    <li>Importance of Test Reporting</li>
+                    <li>Test Summary Reports</li>
+                    <li>Bug Reporting Best Practices</li>
+                    <li>Test Management Tools (Jira, TestRail)</li>
+                    <li>Generating Test Metrics</li>
+                </ul>
+            </div>
+
+            <!-- Soft Skills for QA -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Soft Skills for QA</h3>
+                <ul>
+                    <li>Communication Skills</li>
+                    <li>Collaboration with Developers</li>
+                    <li>Critical Thinking</li>
+                    <li>Problem-Solving Skills</li>
+                    <li>Adaptability in Agile Environments</li>
+                </ul>
+            </div>
+
+            <!-- Certifications for QA Engineers -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Certifications for QA Engineers</h3>
+                <ul>
+                    <li>ISTQB Foundation Level</li>
+                    <li>Certified Software Tester (CSTE)</li>
+                    <li>Certified Agile Tester (CAT)</li>
+                    <li>Automation Certifications (Selenium, TestComplete)</li>
+                    <li>Performance Testing Certifications</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="qa.js"></script>
+</body>
+</html>
