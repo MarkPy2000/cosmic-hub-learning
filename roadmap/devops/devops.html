@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devops Engineer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>DevOps Engineer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+        <div class="roadmap-item" data-category="required">
+            <h3>Programming Language</h3>
+            <ul>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>Node.js</li>
+                <li>Go</li>
+                <li>Rust</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Operating System Concepts</h3>
+            <ul>
+                <li>Process Management</li>
+                <li>Threads and Concurrency</li>
+                <li>Sockets</li>
+                <li>POSIX Basics</li>
+                <li>Network Concepts</li>
+                <li>I/O Management</li>
+                <li>Virtualization</li>
+                <li>Memory/Storage</li>
+                <li>File Systems</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Version Control System</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub/GitLab</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Infrastructure as Code</h3>
+            <ul>
+                <li>Terraform</li>
+                <li>CloudFormation</li>
+                <li>Pulumi</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>CI/CD</h3>
+            <ul>
+                <li>Jenkins</li>
+                <li>GitHub Actions</li>
+                <li>GitLab CI</li>
+                <li>Circle CI</li>
+                <li>Travis CI</li>
+                <li>Azure DevOps</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Configuration Management</h3>
+            <ul>
+                <li>Ansible</li>
+                <li>Puppet</li>
+                <li>Chef</li>
+                <li>Salt</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Containers</h3>
+            <ul>
+                <li>Docker</li>
+                <li>LXC</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Container Orchestration</h3>
+            <ul>
+                <li>Kubernetes</li>
+                <li>Docker Swarm</li>
+                <li>Mesos</li>
+                <li>Nomad</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Cloud Providers</h3>
+            <ul>
+                <li>AWS</li>
+                <li>Google Cloud Platform</li>
+                <li>Azure</li>
+                <li>Heroku</li>
+                <li>Digital Ocean</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Monitoring</h3>
+            <ul>
+                <li>Prometheus</li>
+                <li>Grafana</li>
+                <li>Nagios</li>
+                <li>Zabbix</li>
+                <li>Datadog</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Log Management</h3>
+            <ul>
+                <li>ELK Stack</li>
+                <li>Graylog</li>
+                <li>Splunk</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Cloud Design Patterns</h3>
+            <ul>
+                <li>Availability</li>
+                <li>Data Management</li>
+                <li>Design and Implementation</li>
+                <li>Management and Monitoring</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Security</h3>
+            <ul>
+                <li>SSL/TLS</li>
+                <li>Firewall</li>
+                <li>Reverse Proxy</li>
+                <li>VPN</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Service Mesh</h3>
+            <ul>
+                <li>Istio</li>
+                <li>Consul</li>
+                <li>Linkerd</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Serverless</h3>
+            <ul>
+                <li>AWS Lambda</li>
+                <li>Azure Functions</li>
+                <li>Google Cloud Functions</li>
+                <li>Knative</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <script src="devops.js"></script>
+</body>
+</html>
