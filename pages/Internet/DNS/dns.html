@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Overview</title>
+    <link rel="stylesheet" href="dns.css">
+</head>
+<body>
+    <!-- Space Header -->
+    <header class="space-header">
+        <h1>Understanding DNS</h1>
+        <p>Get insights into how the Domain Name System works and its key components.</p>
+    </header>
+
+    <!-- Information Section -->
+    <div class="info-section">
+        <div class="section-content">
+            <h2>How Does DNS Work?</h2>
+            <p>The Domain Name System (DNS) is crucial for translating user-friendly domain names (e.g., <code>www.example.com</code>) into IP addresses that computers use to identify each other on the Internet (e.g., <code>192.168.1.1</code>). Just as a street address helps you find a home, an IP address helps find a specific device or server on the Internet. When a user wants to load a webpage, DNS translates the human-readable domain name into a machine-friendly IP address.</p>
+            <p>The DNS resolution process involves several key servers:</p>
+            <ul>
+                <li><strong>DNS Recursor:</strong> This server acts like a librarian who helps find a specific book in a vast library. The recursor receives queries from clients (like web browsers) and is responsible for making further requests to resolve the DNS query.</li>
+                <li><strong>Root Nameserver:</strong> The root server is the initial point of contact in translating domain names into IP addresses. It functions like an index in a library, directing queries to more specific servers.</li>
+                <li><strong>TLD Nameserver:</strong> The Top-Level Domain (TLD) server acts like a specific rack in a library. It handles the last segment of a domain name (e.g., <code>.com</code> in <code>example.com</code>) and directs the query to the appropriate authoritative server.</li>
+                <li><strong>Authoritative Nameserver:</strong> This is the final authority in the DNS query process. It holds the actual DNS records and provides the IP address associated with the requested domain name. If it has the record, it returns it to the DNS recursor.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h2>Authoritative DNS Server vs. Recursive DNS Resolver</h2>
+            <p><strong>Recursive DNS Resolver:</strong> This server handles the initial request from a client and performs a series of queries to resolve the domain name into an IP address. It can cache results to speed up future queries and reduce the number of requests needed.</p>
+            <p><strong>Authoritative DNS Server:</strong> This server contains the DNS records for a domain and directly responds to queries with the IP address. It is the final stop in the DNS query chain and does not need to query other servers.</p>
+        </div>
+
+        <div class="section-content">
+            <h2>DNS Lookup Steps</h2>
+            <ol>
+                <li>A user types <code>example.com</code> into a web browser, which sends a query to a DNS recursive resolver.</li>
+                <li>The resolver queries the root nameserver to find the address of the TLD nameserver for <code>.com</code>.</li>
+                <li>The root nameserver responds with the address of the TLD nameserver.</li>
+                <li>The resolver queries the TLD nameserver for <code>.com</code>.</li>
+                <li>The TLD nameserver responds with the IP address of the authoritative nameserver for <code>example.com</code>.</li>
+                <li>The resolver then queries the authoritative nameserver for <code>example.com</code> to obtain the IP address.</li>
+                <li>The IP address is returned to the resolver, which then provides it to the user's browser.</li>
+                <li>The browser uses the IP address to make an HTTP request to the server, which returns the webpage.</li>
+            </ol>
+        </div>
+
+        <div class="section-content">
+            <h2>DNS Queries</h2>
+            <ul>
+                <li><strong>Recursive Query:</strong> The DNS client requires the server to respond with the requested record or an error if not found.</li>
+                <li><strong>Iterative Query:</strong> The DNS client allows the server to return the best answer or a referral to another DNS server.</li>
+                <li><strong>Non-Recursive Query:</strong> The server responds with data it already has or from its cache.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h2>DNS Caching</h2>
+            <p>DNS caching improves performance and reliability by storing DNS data closer to the client. Cached data reduces the number of queries needed and speeds up resolution times. Caching occurs at:</p>
+            <ul>
+                <li><strong>Browser Level:</strong> Modern browsers cache DNS records to reduce lookup time. You can view cached records in Chrome at <code>chrome://net-internals/#dns</code>.</li>
+                <li><strong>Operating System Level:</strong> The OS-level DNS resolver checks its cache before sending a query to a recursive resolver. It also has shortcuts for querying authoritative servers directly if certain records are available.</li>
+                <li><strong>Recursive Resolver:</strong> Checks its cache for records and may skip some steps if the data is available.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Space Footer -->
+    <footer class="space-footer">
+        <p>© 2024 DNS Overview. All rights reserved.</p>
+    </footer>
+    <div class="stars"></div>
+
+    <script src="dns.js"></script>
+
+    <script>
+        // Create stars dynamically
+        const starsContainer = document.querySelector('.stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
