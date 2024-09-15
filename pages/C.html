@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Language - Interactive Website</title>
+    <link rel="stylesheet" href="../Home/styles.css">
+</head>
+<body>
+    <!-- Add particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Add shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Add cosmic dust -->
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+
+    <header>
+        <h1 class="glitch-text" data-text="C Programming Language">C Programming Language</h1>
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html" class="glitch-text" data-text="Home">Home</a></li>
+                <li><a href="../Home/lectures.html" class="glitch-text" data-text="Lectures">Lectures</a></li>
+                <li><a href="python.html" class="glitch-text" data-text="Python">Python</a></li>
+                <li><a href="java.html" class="glitch-text" data-text="Java">Java</a></li>
+                <li><a href="C.html" class="glitch-text" data-text="C">C</a></li>
+                <li><a href="Cpp.html" class="glitch-text" data-text="C++">C++</a></li>
+                <li><a href="roadmap.html" class="glitch-text" data-text="Roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="parallax-section nebula-bg">
+        <section id="c-guide">
+            <div class="container">
+                <h2 class="welcome-message">Welcome to the C Programming Universe!</h2>
+                <p>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.</p>
+
+                <h3>C Language Fundamentals</h3>
+                <p>Start your journey with these fundamental C concepts:</p>
+                <ul>
+                    <li><a href="https://devdocs.io/c/language" target="_blank" class="glitch-text" data-text="Language Fundamentals">Language Fundamentals</a> - Learn the basic structure of a C program, syntax, and semantics.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/language/statements" target="_blank" class="glitch-text" data-text="Statements">Statements</a> - Control the flow of your C program with statements.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+int main() {
+    int x = 10;
+    if (x > 5) {
+        printf("x is greater than 5");
+    }
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/language/expressions" target="_blank" class="glitch-text" data-text="Expressions">Expressions</a> - Learn how expressions are evaluated in C.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+int result = 5 + 10 * 2; // result is 25
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/language/declarations" target="_blank" class="glitch-text" data-text="Declarations">Declarations</a> - Understand variable and function declarations.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+int x; // variable declaration
+int add(int a, int b); // function declaration
+                            </code></pre>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>C Standard Library</h3>
+                <p>Explore the C standard library functions and utilities:</p>
+                <ul>
+                    <li><a href="https://devdocs.io/c/io" target="_blank" class="glitch-text" data-text="Input/Output">Input/Output</a> - Handle user input and program output with standard I/O functions.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num); // takes input from user
+    printf("You entered: %d", num); // prints output
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/string" target="_blank" class="glitch-text" data-text="String Handling">String Handling</a> - Manipulate strings using standard library functions.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char str1[20] = "Hello";
+    char str2[20] = "World";
+    strcat(str1, str2); // concatenates str2 to str1
+    printf("%s", str1); // prints "HelloWorld"
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/memory" target="_blank" class="glitch-text" data-text="Memory Management">Memory Management</a> - Learn about dynamic memory allocation in C.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main() {
+    int *ptr;
+    ptr = (int*) malloc(sizeof(int)); // dynamically allocate memory
+    *ptr = 10;
+    printf("%d", *ptr); // prints 10
+    free(ptr); // free allocated memory
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>Advanced C Topics</h3>
+                <p>Dive deeper into more advanced C programming concepts:</p>
+                <ul>
+                    <li><a href="https://devdocs.io/c/language/pointer" target="_blank" class="glitch-text" data-text="Pointers">Pointers</a> - Master memory manipulation with pointers.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 10;
+    int *p = &a; // pointer to the address of a
+    printf("%d", *p); // prints 10 (value at address p)
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                    <li><a href="https://devdocs.io/c/language/struct" target="_blank" class="glitch-text" data-text="Structures">Structures</a> - Group different data types into a single entity.</li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+
+struct Student {
+    char name[50];
+    int age;
+};
+
+int main() {
+    struct Student s1;
+    strcpy(s1.name, "John");
+    s1.age = 20;
+    printf("%s is %d years old", s1.name, s1.age);
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>C Preprocessor</h3>
+                <p>Learn about the C preprocessor and its directives:</p>
+                <ul>
+                    <li><a href="https://devdocs.io/c/preprocessor" target="_blank" class="glitch-text" data-text="Preprocessor Overview">Preprocessor Overview</a></li>
+                    <li><a href="https://devdocs.io/c/preprocessor/include" target="_blank" class="glitch-text" data-text="#include Directive">#include Directive</a></li>
+                    <li><strong>Example</strong>:
+                        <div class="frame-cover">
+                            <pre><code>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main() {
+    printf("Square root of 16 is %.2f", sqrt(16));
+    return 0;
+}
+                            </code></pre>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3>C Development Tools</h3>
+                <p>Get familiar with essential C development tools:</p>
+                <ul>
+                    <li><a href="https://gcc.gnu.org/" target="_blank" class="glitch-text" data-text="GCC (GNU Compiler Collection)">GCC (GNU Compiler Collection)</a></li>
+                    <li><a href="https://www.codeblocks.org/" target="_blank" class="glitch-text" data-text="Code::Blocks IDE">Code::Blocks IDE</a></li>
+                    <li><a href="https://www.eclipse.org/downloads/packages/release/2021-03/r/eclipse-ide-cc-developers" target="_blank" class="glitch-text" data-text="Eclipse IDE for C/C++ Developers">Eclipse IDE for C/C++ Developers</a></li>
+                    <li><a href="https://www.gnu.org/software/gdb/" target="_blank" class="glitch-text" data-text="GDB (GNU Debugger)">GDB (GNU Debugger)</a></li>
+                </ul>
+
+                <h3>C Programming Resources</h3>
+                <p>Find more resources to master C programming:</p>
+                <ul>
+                    <li><a href="https://en.cppreference.com/w/c" target="_blank" class="glitch-text" data-text="C Reference">C Reference</a></li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/c" target="_blank" class="glitch-text" data-text="Stack Overflow C Questions">Stack Overflow C Questions</a></li>
+                    <li><a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards" target="_blank" class="glitch-text" data-text="C Language Standards">C Language Standards</a></li>
+                </ul>
+
+                <a href="https://devdocs.io/c/" target="_blank" class="button">Explore More C Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Home/script.js"></script>
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 1, direction: "none", random: true, out_mode: "out" }
+            }
+        });
+    </script>
+</body>
+</html>
