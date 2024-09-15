@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Game Developer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Required Skills -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Programming Fundamentals</h3>
+                <ul>
+                    <li>Basic Programming Concepts</li>
+                    <li>Object-Oriented Programming (OOP)</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Game Physics and Mathematics</li>
+                    <li>Problem-Solving and Debugging</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Game Design Principles</h3>
+                <ul>
+                    <li>Game Mechanics</li>
+                    <li>Storytelling and Narrative Design</li>
+                    <li>Level Design</li>
+                    <li>Player Psychology and Engagement</li>
+                    <li>Prototyping and Iteration</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Game Engines</h3>
+                <ul>
+                    <li>Unity</li>
+                    <li>Unreal Engine</li>
+                    <li>Godot</li>
+                    <li>Other Popular Engines (e.g., CryEngine, RPG Maker)</li>
+                    <li>Engine-specific Scripting (e.g., C# for Unity, Blueprint for Unreal)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Graphics and Animation</h3>
+                <ul>
+                    <li>2D and 3D Graphics Basics</li>
+                    <li>Sprite Creation and Animation</li>
+                    <li>3D Modeling and Animation</li>
+                    <li>Texture Mapping</li>
+                    <li>Shader Programming</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Audio in Games</h3>
+                <ul>
+                    <li>Sound Design</li>
+                    <li>Creating and Integrating Sound Effects</li>
+                    <li>Background Music</li>
+                    <li>Voice Acting</li>
+                    <li>Audio Middleware (e.g., FMOD, Wwise)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Game Testing and Debugging</h3>
+                <ul>
+                    <li>Playtesting</li>
+                    <li>Bug Tracking and Fixing</li>
+                    <li>Performance Optimization</li>
+                    <li>Automated Testing</li>
+                    <li>User Feedback Integration</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Deployment and Distribution</h3>
+                <ul>
+                    <li>Publishing Platforms (e.g., Steam, Epic Store, Consoles)</li>
+                    <li>Game Monetization Strategies</li>
+                    <li>Marketing and Promotion</li>
+                    <li>Post-Launch Support and Updates</li>
+                    <li>Handling User Data and Analytics</li>
+                </ul>
+            </div>
+
+            <!-- Optional Skills -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Programming</h3>
+                <ul>
+                    <li>Multithreading and Concurrency</li>
+                    <li>Networking and Multiplayer Programming</li>
+                    <li>Custom Game Engines</li>
+                    <li>Performance Profiling and Optimization</li>
+                    <li>Advanced Algorithm Design</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Game Design</h3>
+                <ul>
+                    <li>Procedural Content Generation</li>
+                    <li>AI and Behavior Trees</li>
+                    <li>Complex Game Systems Design</li>
+                    <li>Advanced Narrative Techniques</li>
+                    <li>Game Economies and Monetization</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Virtual Reality (VR) and Augmented Reality (AR)</h3>
+                <ul>
+                    <li>VR/AR Hardware and Platforms</li>
+                    <li>Designing for Immersive Experiences</li>
+                    <li>VR/AR Interaction Design</li>
+                    <li>Spatial Audio</li>
+                    <li>Performance Optimization for VR/AR</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Artificial Intelligence (AI) in Games</h3>
+                <ul>
+                    <li>Behavioral AI</li>
+                    <li>Pathfinding Algorithms</li>
+                    <li>Procedural Animation</li>
+                    <li>Machine Learning for Games</li>
+                    <li>AI Tools and Frameworks</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Game Marketing and Community Management</h3>
+                <ul>
+                    <li>Building a Community</li>
+                    <li>Engaging with Players</li>
+                    <li>Marketing Strategies for Games</li>
+                    <li>Managing Social Media and Forums</li>
+                    <li>Creating Game Trailers and Promotional Materials</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Cross-Platform Development</h3>
+                <ul>
+                    <li>Developing for Multiple Platforms</li>
+                    <li>Porting Games to Different Devices</li>
+                    <li>Handling Different Screen Sizes and Resolutions</li>
+                    <li>Cross-Platform Play</li>
+                    <li>Platform-Specific Considerations</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Game Development Tools</h3>
+                <ul>
+                    <li>Version Control Systems (e.g., Git)</li>
+                    <li>Project Management Tools</li>
+                    <li>Collaborative Tools (e.g., Perforce, JIRA)</li>
+                    <li>Game Asset Management</li>
+                    <li>Custom Tool Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
