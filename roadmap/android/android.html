@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Android Developer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Core Android Development Concepts -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Core Android Development Concepts</h3>
+                <ul>
+                    <li>Android Architecture & Components</li>
+                    <li>Activity Lifecycle</li>
+                    <li>Intents and Intent Filters</li>
+                    <li>Fragment Lifecycle</li>
+                    <li>Android Manifest</li>
+                </ul>
+            </div>
+            
+            <!-- Programming Languages -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Kotlin (Preferred Language)</li>
+                    <li>Java</li>
+                    <li>XML for UI Design</li>
+                </ul>
+            </div>
+
+            <!-- User Interface (UI) Design -->
+            <div class="roadmap-item" data-category="required">
+                <h3>User Interface (UI) Design</h3>
+                <ul>
+                    <li>Views, Layouts, and Widgets</li>
+                    <li>RecyclerView and Adapter</li>
+                    <li>ConstraintLayout, LinearLayout, RelativeLayout</li>
+                    <li>Material Design Guidelines</li>
+                    <li>Custom Views</li>
+                </ul>
+            </div>
+
+            <!-- Data Storage & Management -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Storage & Management</h3>
+                <ul>
+                    <li>SharedPreferences</li>
+                    <li>SQLite Databases</li>
+                    <li>Room Database</li>
+                    <li>Content Providers</li>
+                    <li>Data Binding</li>
+                </ul>
+            </div>
+
+            <!-- Networking & APIs -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Networking & APIs</h3>
+                <ul>
+                    <li>RESTful APIs (Retrofit, OkHttp)</li>
+                    <li>WebSockets</li>
+                    <li>Handling JSON</li>
+                    <li>Asynchronous Programming (Coroutines, AsyncTask)</li>
+                    <li>Data Parsing (Gson, Moshi)</li>
+                </ul>
+            </div>
+
+            <!-- Dependency Injection (DI) -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Dependency Injection (DI)</h3>
+                <ul>
+                    <li>Dagger</li>
+                    <li>Koin</li>
+                    <li>Hilt</li>
+                </ul>
+            </div>
+
+            <!-- Advanced Android Components -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Android Components</h3>
+                <ul>
+                    <li>WorkManager</li>
+                    <li>Services (Foreground, Background)</li>
+                    <li>Broadcast Receivers</li>
+                    <li>Notifications</li>
+                    <li>Jetpack Libraries</li>
+                </ul>
+            </div>
+
+            <!-- Testing & Debugging -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Testing & Debugging</h3>
+                <ul>
+                    <li>Unit Testing (JUnit, Mockito)</li>
+                    <li>UI Testing (Espresso)</li>
+                    <li>Debugging with Android Studio</li>
+                    <li>Logcat</li>
+                    <li>Crashlytics</li>
+                </ul>
+            </div>
+
+            <!-- Version Control Systems -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Version Control Systems</h3>
+                <ul>
+                    <li>Git Basics</li>
+                    <li>Using GitHub or Bitbucket</li>
+                    <li>Branching and Merging</li>
+                    <li>Pull Requests & Code Reviews</li>
+                </ul>
+            </div>
+
+            <!-- Continuous Integration & Delivery (CI/CD) -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Continuous Integration & Delivery (CI/CD)</h3>
+                <ul>
+                    <li>Jenkins</li>
+                    <li>CircleCI</li>
+                    <li>Travis CI</li>
+                    <li>Automated Testing Pipelines</li>
+                    <li>Google Play Store Deployment</li>
+                </ul>
+            </div>
+
+            <!-- Firebase Services -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Firebase Services</h3>
+                <ul>
+                    <li>Firebase Analytics</li>
+                    <li>Cloud Firestore</li>
+                    <li>Firebase Cloud Messaging (FCM)</li>
+                    <li>Firebase Authentication</li>
+                    <li>Firebase Remote Config</li>
+                </ul>
+            </div>
+
+            <!-- Android Jetpack Components -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Android Jetpack Components</h3>
+                <ul>
+                    <li>Navigation Component</li>
+                    <li>LiveData & ViewModel</li>
+                    <li>Room for Databases</li>
+                    <li>WorkManager for Background Processing</li>
+                    <li>DataBinding</li>
+                </ul>
+            </div>
+
+            <!-- App Performance & Optimization -->
+            <div class="roadmap-item" data-category="required">
+                <h3>App Performance & Optimization</h3>
+                <ul>
+                    <li>Memory Management (LeakCanary)</li>
+                    <li>Battery Optimization</li>
+                    <li>ProGuard</li>
+                    <li>Reducing App Size</li>
+                    <li>App Startup Time</li>
+                </ul>
+            </div>
+
+            <!-- Android App Architecture -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Android App Architecture</h3>
+                <ul>
+                    <li>MVC (Model-View-Controller)</li>
+                    <li>MVP (Model-View-Presenter)</li>
+                    <li>MVVM (Model-View-ViewModel)</li>
+                    <li>Clean Architecture</li>
+                </ul>
+            </div>
+
+            <!-- App Monetization -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>App Monetization</h3>
+                <ul>
+                    <li>In-App Purchases</li>
+                    <li>Google AdMob</li>
+                    <li>Subscriptions</li>
+                    <li>Freemium Models</li>
+                </ul>
+            </div>
+
+            <!-- Android App Distribution -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Android App Distribution</h3>
+                <ul>
+                    <li>Google Play Store</li>
+                    <li>Beta Testing with Play Console</li>
+                    <li>App Store Optimization (ASO)</li>
+                    <li>Releasing Updates</li>
+                </ul>
+            </div>
+
+            <!-- Certifications for Android Developers -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Certifications for Android Developers</h3>
+                <ul>
+                    <li>Associate Android Developer (AAD)</li>
+                    <li>Google Developer Certification</li>
+                    <li>Coursera/LinkedIn Learning Certifications</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="android.js"></script>
+</body>
+</html>
