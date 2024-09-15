@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Architect Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Software Architect Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Core Concepts -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Core Concepts</h3>
+                <ul>
+                    <li>Introduction to Software Architecture</li>
+                    <li>Understanding Architectural Patterns</li>
+                    <li>Software Design Principles</li>
+                    <li>Designing Scalable Systems</li>
+                    <li>Architectural Trade-offs and Decision Making</li>
+                    <li>Documentation and Communication Skills</li>
+                    <li>Non-Functional Requirements (NFRs)</li>
+                    <li>Enterprise Architecture Basics</li>
+                    <li>Understanding Software Lifecycle Models</li>
+                    <li>Service-Oriented Architecture (SOA)</li>
+                    <li>Domain-Driven Design (DDD)</li>
+                </ul>
+            </div>
+
+            <!-- Architecture Patterns -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Architecture Patterns</h3>
+                <ul>
+                    <li>Layered Architecture</li>
+                    <li>Microservices Architecture</li>
+                    <li>Event-Driven Architecture</li>
+                    <li>Serverless Architecture</li>
+                    <li>Monolithic vs. Distributed Systems</li>
+                    <li>Hexagonal Architecture (Ports and Adapters)</li>
+                    <li>Modular Architecture</li>
+                    <li>Reactive Architecture</li>
+                    <li>Event Sourcing</li>
+                    <li>Command Query Responsibility Segregation (CQRS)</li>
+                </ul>
+            </div>
+
+            <!-- Design Principles -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Design Principles</h3>
+                <ul>
+                    <li>SOLID Principles</li>
+                    <li>DRY (Don't Repeat Yourself)</li>
+                    <li>KISS (Keep It Simple, Stupid)</li>
+                    <li>YAGNI (You Aren't Gonna Need It)</li>
+                    <li>Separation of Concerns</li>
+                    <li>Principles of Modularity and Coupling</li>
+                    <li>Principles of Least Privilege</li>
+                    <li>Design by Contract</li>
+                    <li>Principles of Fault Tolerance</li>
+                    <li>Failure Management and Recovery</li>
+                    <li>Robustness Principle</li>
+                    <li>Fail-Fast and Fail-Safe Systems</li>
+                </ul>
+            </div>
+
+            <!-- System Design -->
+            <div class="roadmap-item" data-category="required">
+                <h3>System Design</h3>
+                <ul>
+                    <li>High-Level System Design</li>
+                    <li>Low-Level Design</li>
+                    <li>Designing for Scalability</li>
+                    <li>Designing for Reliability and Fault Tolerance</li>
+                    <li>Performance Considerations</li>
+                    <li>Data Modeling and Database Design</li>
+                    <li>Designing for High Availability</li>
+                    <li>Capacity Planning and Load Balancing</li>
+                    <li>Designing for Security and Compliance</li>
+                    <li>Design Patterns for System Integration</li>
+                    <li>API Design and Integration</li>
+                    <li>Message Queuing and Asynchronous Processing</li>
+                </ul>
+            </div>
+
+            <!-- Technologies & Tools -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Technologies & Tools</h3>
+                <ul>
+                    <li>Understanding Modern Tech Stacks</li>
+                    <li>Cloud Platforms (AWS, Azure, Google Cloud)</li>
+                    <li>Containerization and Orchestration (Docker, Kubernetes)</li>
+                    <li>API Design and Management</li>
+                    <li>CI/CD Tools and Practices</li>
+                    <li>Monitoring and Logging Tools</li>
+                    <li>Configuration Management (Ansible, Puppet, Chef)</li>
+                    <li>Infrastructure as Code (Terraform, AWS CloudFormation)</li>
+                    <li>Database Technologies (SQL, NoSQL)</li>
+                    <li>Message Brokers (Kafka, RabbitMQ)</li>
+                    <li>Service Meshes (Istio, Linkerd)</li>
+                    <li>Distributed Tracing and Observability</li>
+                </ul>
+            </div>
+
+            <!-- Security Considerations -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Security Considerations</h3>
+                <ul>
+                    <li>Basic Security Principles</li>
+                    <li>Authentication and Authorization</li>
+                    <li>Data Encryption and Secure Storage</li>
+                    <li>Securing APIs and Services</li>
+                    <li>Security Threats and Vulnerabilities</li>
+                    <li>Secure Software Development Lifecycle (SDLC)</li>
+                    <li>Incident Response and Recovery</li>
+                    <li>Compliance and Regulatory Standards (GDPR, HIPAA)</li>
+                    <li>Security Testing and Vulnerability Scanning</li>
+                    <li>Penetration Testing and Threat Modeling</li>
+                    <li>Zero Trust Architecture</li>
+                    <li>Security Operations and Monitoring</li>
+                </ul>
+            </div>
+
+            <!-- Project Management -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Project Management</h3>
+                <ul>
+                    <li>Understanding Project Life Cycle</li>
+                    <li>Agile and Scrum Methodologies</li>
+                    <li>Managing Technical Debt</li>
+                    <li>Risk Management and Mitigation</li>
+                    <li>Stakeholder Communication</li>
+                    <li>Resource Management</li>
+                    <li>Budgeting and Cost Management</li>
+                    <li>Change Management</li>
+                    <li>Quality Assurance and Control</li>
+                    <li>Project Scheduling and Milestones</li>
+                    <li>Project Governance</li>
+                    <li>Knowledge Management</li>
+                </ul>
+            </div>
+
+            <!-- Collaboration & Leadership -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Collaboration & Leadership</h3>
+                <ul>
+                    <li>Leading Technical Teams</li>
+                    <li>Effective Communication with Stakeholders</li>
+                    <li>Mentoring and Training Team Members</li>
+                    <li>Conflict Resolution</li>
+                    <li>Building and Sustaining Team Morale</li>
+                    <li>Cross-Functional Team Collaboration</li>
+                    <li>Strategic Planning and Vision</li>
+                    <li>Change Leadership and Management</li>
+                    <li>Decision-Making and Problem-Solving Skills</li>
+                    <li>Coaching and Personal Development</li>
+                    <li>Fostering Innovation and Creativity</li>
+                </ul>
+            </div>
+
+            <!-- Emerging Trends -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Emerging Trends</h3>
+                <ul>
+                    <li>Artificial Intelligence and Machine Learning</li>
+                    <li>Blockchain Technology</li>
+                    <li>Edge Computing</li>
+                    <li>Internet of Things (IoT)</li>
+                    <li>Quantum Computing</li>
+                    <li>Serverless Architectures</li>
+                    <li>5G Networks</li>
+                    <li>Augmented Reality (AR) and Virtual Reality (VR)</li>
+                    <li>Robotic Process Automation (RPA)</li>
+                    <li>Green Computing and Sustainability</li>
+                    <li>Decentralized Finance (DeFi)</li>
+                    <li>Digital Twins</li>
+                </ul>
+            </div>
+
+            <!-- Certifications for Software Architects -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Certifications for Software Architects</h3>
+                <ul>
+                    <li>Certified Software Architect (CSA)</li>
+                    <li>TOGAF (The Open Group Architecture Framework)</li>
+                    <li>Certified ScrumMaster (CSM)</li>
+                    <li>AWS Certified Solutions Architect</li>
+                    <li>Google Cloud Professional Architect</li>
+                    <li>Azure Solutions Architect Expert</li>
+                    <li>Certified Information Systems Security Professional (CISSP)</li>
+                    <li>Certified Ethical Hacker (CEH)</li>
+                    <li>Certified Information Systems Auditor (CISA)</li>
+                    <li>ITIL Certification</li>
+                    <li>Certified Kubernetes Administrator (CKA)</li>
+                    <li>Professional Cloud Architect (Google Cloud)</li>
+                </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Critical Thinking and Problem-Solving</li>
+                    <li>Effective Communication</li>
+                    <li>Negotiation and Persuasion</li>
+                    <li>Time Management</li>
+                    <li>Adaptability and Flexibility</li>
+                    <li>Emotional Intelligence</li>
+                    <li>Conflict Management</li>
+                    <li>Team Collaboration</li>
+                    <li>Leadership and Vision</li>
+                    <li>Presentation Skills</li>
+                    <li>Active Listening</li>
+                    <li>Ethical Judgment and Decision-Making</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="frontend.js"></script>
+</body>
+</html>
