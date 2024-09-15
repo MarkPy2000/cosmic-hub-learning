@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+    <h1>AI Developer Roadmap</h1>
+    <div class="roadmap-controls">
+        <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+        <div class="filter-container">
+            <button onclick="filterItems('required')">Required</button>
+            <button onclick="filterItems('optional')">Optional</button>
+            <button onclick="filterItems('all')">All</button>
+        </div>
+    </div>
+        <div class="roadmap">
+            <!-- Required AI Fundamentals -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Mathematics for AI</h3>
+                <ul>
+                    <li>Linear Algebra</li>
+                    <li>Calculus</li>
+                    <li>Probability and Statistics</li>
+                    <li>Optimization Techniques</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python (Primary Language)</li>
+                    <li>R</li>
+                    <li>Julia (Optional)</li>
+                    <li>C++ for performance optimization</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Machine Learning Basics</h3>
+                <ul>
+                    <li>Supervised Learning</li>
+                    <li>Unsupervised Learning</li>
+                    <li>Reinforcement Learning</li>
+                    <li>Common Algorithms (e.g., Linear Regression, Decision Trees, SVMs, k-NN)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Deep Learning</h3>
+                <ul>
+                    <li>Neural Networks</li>
+                    <li>Convolutional Neural Networks (CNN)</li>
+                    <li>Recurrent Neural Networks (RNN)</li>
+                    <li>Autoencoders</li>
+                    <li>Transfer Learning</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Natural Language Processing (NLP)</h3>
+                <ul>
+                    <li>Tokenization</li>
+                    <li>Word Embeddings (e.g., Word2Vec, GloVe)</li>
+                    <li>Sequence Models (e.g., LSTMs, GRUs)</li>
+                    <li>Transformer Models (e.g., BERT, GPT)</li>
+                    <li>Text Classification & Summarization</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Computer Vision</h3>
+                <ul>
+                    <li>Image Classification</li>
+                    <li>Object Detection (e.g., YOLO, SSD)</li>
+                    <li>Image Segmentation</li>
+                    <li>Generative Adversarial Networks (GANs)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Science and Analysis</h3>
+                <ul>
+                    <li>Exploratory Data Analysis (EDA)</li>
+                    <li>Data Preprocessing</li>
+                    <li>Feature Engineering</li>
+                    <li>Data Visualization</li>
+                    <li>Model Evaluation and Metrics</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>AI Tools & Libraries</h3>
+                <ul>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>PyTorch</li>
+                    <li>Scikit-learn</li>
+                    <li>OpenCV (for Computer Vision)</li>
+                </ul>
+            </div>
+            <!-- Core AI Concepts -->
+        <div class="roadmap-item" data-category="required">
+            <h3>Core AI Concepts</h3>
+            <ul>
+                <li>Artificial General Intelligence (AGI)</li>
+                <li>Knowledge Representation and Reasoning</li>
+                <li>AI Planning</li>
+                <li>Search Algorithms (Breadth-First, Depth-First, A* Search)</li>
+            </ul>
+        </div>
+        
+        <!-- AI Frameworks and Libraries -->
+        <div class="roadmap-item" data-category="required">
+            <h3>AI Frameworks & Libraries</h3>
+            <ul>
+                <li>TensorFlow</li>
+                <li>PyTorch</li>
+                <li>ONNX (Open Neural Network Exchange)</li>
+                <li>Hugging Face Transformers</li>
+            </ul>
+        </div>
+        
+        <!-- Machine Learning -->
+        <div class="roadmap-item" data-category="required">
+            <h3>Machine Learning</h3>
+            <ul>
+                <li>Supervised Learning</li>
+                <li>Unsupervised Learning</li>
+                <li>Reinforcement Learning</li>
+                <li>Neural Networks</li>
+                <li>Convolutional Neural Networks (CNNs)</li>
+                <li>Recurrent Neural Networks (RNNs)</li>
+            </ul>
+        </div>
+        <!-- Optimization Techniques -->
+        <div class="roadmap-item" data-category="required">
+            <h3>Optimization Techniques</h3>
+            <ul>
+                <li>Gradient Descent</li>
+                <li>Bayesian Optimization</li>
+                <li>Hyperparameter Tuning (Optuna, Hyperopt)</li>
+            </ul>
+        </div>
+
+        <!-- AI Hardware & Deployment -->
+        <div class="roadmap-item" data-category="required">
+            <h3>AI Hardware & Deployment</h3>
+            <ul>
+                <li>GPUs & TPUs Optimization</li>
+                <li>AI on Edge Devices (IoT)</li>
+                <li>Serverless AI</li>
+                <li>AI Deployment on Cloud (AWS, Azure, Google Cloud)</li>
+            </ul>
+        </div>
+
+        <!-- Data Engineering for AI -->
+        <div class="roadmap-item" data-category="required">
+            <h3>Data Engineering for AI</h3>
+            <ul>
+                <li>Data Wrangling and Preprocessing</li>
+                <li>Big Data Integration (Hadoop, Spark)</li>
+                <li>Data Augmentation</li>
+            </ul>
+        </div>
+        <!-- AI Applications in Industries -->
+        <div class="roadmap-item" data-category="required">
+            <h3>AI Applications in Industries</h3>
+            <ul>
+                <li>AI in Healthcare</li>
+                <li>AI in Finance (Fraud Detection, Trading)</li>
+                <li>AI in Autonomous Vehicles</li>
+                <li>AI in Social Media (Recommendation Systems)</li>
+            </ul>
+        </div>
+        <!-- MLOps -->
+        <div class="roadmap-item" data-category="optional">
+            <h3>MLOps</h3>
+            <ul>
+                <li>Model Versioning</li>
+                <li>Model Monitoring & Retraining</li>
+                <li>Continuous Integration/Deployment (CI/CD) for AI</li>
+            </ul>
+        </div>
+        <!-- AI Research Topics -->
+        <div class="roadmap-item" data-category="optional">
+            <h3>AI Research Topics</h3>
+            <ul>
+                <li>Explainable AI (XAI)</li>
+                <li>Ethical AI and AI Policy</li>
+                <li>Federated Learning</li>
+                <li>Multimodal AI (Text, Image, Speech Integration)</li>
+                <li>AI in Edge Computing</li>
+            </ul>
+        </div>
+
+            <!-- Optional Advanced Topics -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>AI Ethics and Fairness</h3>
+                <ul>
+                    <li>Bias and Fairness in AI</li>
+                    <li>Transparency and Explainability</li>
+                    <li>Ethical Considerations in AI Systems</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Reinforcement Learning (Advanced)</h3>
+                <ul>
+                    <li>Markov Decision Processes</li>
+                    <li>Q-Learning</li>
+                    <li>Deep Q-Networks (DQN)</li>
+                    <li>Policy Gradient Methods</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>AI in Production</h3>
+                <ul>
+                    <li>Model Deployment (e.g., Flask, FastAPI, TensorFlow Serving)</li>
+                    <li>Model Monitoring and Retraining</li>
+                    <li>Scalability and Performance Optimization</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Generative AI</h3>
+                <ul>
+                    <li>Generative Adversarial Networks (GANs)</li>
+                    <li>Variational Autoencoders (VAEs)</li>
+                    <li>Diffusion Models</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Robotics and AI</h3>
+                <ul>
+                    <li>Autonomous Systems</li>
+                    <li>Robotics Process Automation (RPA)</li>
+                    <li>Robot Learning</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Quantum Machine Learning</h3>
+                <ul>
+                    <li>Quantum Computing Basics</li>
+                    <li>Quantum Algorithms for AI</li>
+                    <li>Quantum Neural Networks</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>AI in Healthcare</h3>
+                <ul>
+                    <li>Medical Image Analysis</li>
+                    <li>AI for Drug Discovery</li>
+                    <li>AI in Diagnostics</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>AI for Games</h3>
+                <ul>
+                    <li>Game AI Agents</li>
+                    <li>Procedural Content Generation</li>
+                    <li>AI for Game Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="ai.js"></script>
+</body>
+</html>
