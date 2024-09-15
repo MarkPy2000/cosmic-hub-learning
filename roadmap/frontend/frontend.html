@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+    <h1>Frontend Developer Roadmap</h1>
+    <div class="roadmap-controls">
+        <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+        <div class="filter-container">
+            <button onclick="filterItems('required')">Required</button>
+            <button onclick="filterItems('optional')">Optional</button>
+            <button onclick="filterItems('all')">All</button>
+        </div>
+    </div>
+        <div class="roadmap">
+            <div class="roadmap-item" data-category="required">
+                <h3>HTML</h3>
+                <ul>
+                    <li>Learn the basics</li>
+                    <li>Writing Semantic HTML</li>
+                    <li>Forms and Validations</li>
+                    <li>Conventions and Best Practices</li>
+                    <li>Accessibility</li>
+                    <li>SEO Basics</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>CSS</h3>
+                <ul>
+                    <li>CSS basics</li>
+                    <li>Making Layouts</li>
+                    <li>Responsive Design</li>
+                    <li>CSS Grid & Flexbox</li>
+                    <li>CSS Animations</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>JavaScript</h3>
+                <ul>
+                    <li>Syntax and Basic Constructs</li>
+                    <li>Learn DOM Manipulation</li>
+                    <li>Learn Fetch API / Ajax (XHR)</li>
+                    <li>ES6+ and modular JavaScript</li>
+                    <li>Understand the concepts of hoisting, event bubbling, scope, prototype, shadow DOM, strict</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Version Control Systems</h3>
+                <ul>
+                    <li>Basic Usage of Git</li>
+                    <li>Repo hosting services (GitHub, GitLab, Bitbucket)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Web Security Knowledge</h3>
+                <ul>
+                    <li>HTTPS</li>
+                    <li>CORS</li>
+                    <li>Content Security Policy</li>
+                    <li>OWASP Security Risks</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="required">
+                <h3>Package Managers</h3>
+                <ul>
+                    <li>npm</li>
+                    <li>yarn</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>CSS Architecture</h3>
+                <ul>
+                    <li>BEM</li>
+                    <li>OOCSS</li>
+                    <li>SMACSS</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>CSS Preprocessors</h3>
+                <ul>
+                    <li>Sass</li>
+                    <li>PostCSS</li>
+                    <li>Less</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Build Tools</h3>
+                <ul>
+                    <li>Task Runners (npm scripts)</li>
+                    <li>Linters and Formatters (Prettier, ESLint)</li>
+                    <li>Module Bundlers (Webpack, Rollup, Parcel)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Pick a Framework</h3>
+                <ul>
+                    <li>React.js</li>
+                    <li>Angular</li>
+                    <li>Vue.js</li>
+                    <li>Svelte</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Modern CSS</h3>
+                <ul>
+                    <li>Styled Components</li>
+                    <li>CSS Modules</li>
+                    <li>Styled JSX</li>
+                    <li>Emotion</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Web Components</h3>
+                <ul>
+                    <li>HTML Templates</li>
+                    <li>Custom Elements</li>
+                    <li>Shadow DOM</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>CSS Frameworks</h3>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Tailwind CSS</li>
+                    <li>Bulma</li>
+                    <li>Semantic UI</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Testing</h3>
+                <ul>
+                    <li>Jest</li>
+                    <li>React Testing Library</li>
+                    <li>Cypress</li>
+                    <li>Enzyme</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Type Checkers</h3>
+                <ul>
+                    <li>TypeScript</li>
+                    <li>Flow</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Progressive Web Apps</h3>
+                <ul>
+                    <li>Storage</li>
+                    <li>Web Sockets</li>
+                    <li>Service Workers</li>
+                    <li>Location</li>
+                    <li>Notifications</li>
+                    <li>Device Orientation</li>
+                    <li>Payments</li>
+                    <li>Credentials</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Server Side Rendering (SSR)</h3>
+                <ul>
+                    <li>React (Next.js)</li>
+                    <li>Angular (Universal)</li>
+                    <li>Vue.js (Nuxt.js)</li>
+                    <li>Svelte (Sapper)</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>GraphQL</h3>
+                <ul>
+                    <li>Apollo</li>
+                    <li>Relay Modern</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Static Site Generators</h3>
+                <ul>
+                    <li>Next.js</li>
+                    <li>GatsbyJS</li>
+                    <li>Nuxt.js</li>
+                    <li>Hugo</li>
+                    <li>Jekyll</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Mobile Applications</h3>
+                <ul>
+                    <li>React Native</li>
+                    <li>Flutter</li>
+                    <li>Ionic</li>
+                    <li>NativeScript</li>
+                </ul>
+            </div>
+            <div class="roadmap-item" data-category="optional">
+                <h3>Desktop Applications</h3>
+                <ul>
+                    <li>Electron</li>
+                    <li>Proton Native</li>
+                    <li>Carlo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="frontend.js"></script>
+    <div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2 id="popup-title"></h2>
+    <p id="popup-text"></p>
+    <div id="popup-resources"></div>
+  </div>
+</div>
+</body>
+</html>
