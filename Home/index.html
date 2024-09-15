@@ -27,16 +27,17 @@
             <img src="programmer.png" alt="Logo" class="logo">
             <h1 class="glitch-text" data-text="Interactive Website">Interactive Website</h1>
         </div>
+        <!-- Removed language selector -->
     </header>
     <main>
         <section id="home" class="parallax-section nebula-bg">
             <div class="frame-cover">
                 <h2 class="welcome-message">Welcome to our Cosmic Learning Hub!</h2>
                 <p>Explore the universe of knowledge with our interstellar lectures.</p>
-                <p>Click <a href="../pages/python.html" id="pythonLink" class="link glitch-text" data-text="Python">Python</a> to explore a cosmic map of Python programming.</p>
-                <p>Click <a href="../pages/java.html" id="javaLink" class="link glitch-text" data-text="Java">Java</a> to embark on a journey through the Java galaxy.</p>
-                <p>Click <a href="../pages/C.html" id="cLink" class="link glitch-text" data-text="C">C</a> to dive into the foundational universe of C programming.</p>
-                <p>Click <a href="../pages/Cpp.html" id="cppLink" class="link glitch-text" data-text="C++">C++</a> to explore the advanced dimension of the C universe.</p>
+                <p><span>Click</span> <a href="../pages/python.html" id="pythonLink" class="link glitch-text" data-text="Python">Python</a> <span>to explore a cosmic map of Python programming.</span></p>
+                <p><span>Click</span> <a href="../pages/java.html" id="javaLink" class="link glitch-text" data-text="Java">Java</a> <span>to embark on a journey through the Java galaxy.</span></p>
+                <p><span>Click</span> <a href="../pages/C.html" id="cLink" class="link glitch-text" data-text="C">C</a> <span>to dive into the foundational universe of C programming.</span></p>
+                <p><span>Click</span> <a href="../pages/Cpp.html" id="cppLink" class="link glitch-text" data-text="C++">C++</a> <span>to explore the advanced dimension of the C universe.</span></p>
             </div>
             <div id="mindMap" style="display: none;">
                 <!-- Placeholder for mind map or interactive feature -->
@@ -44,7 +45,7 @@
             </div>
             <a href="lectures.html" class="button">Go to Lectures</a>
             <a href="../pages/roadmap.html" class="button roadmap-button">Explore Developer Roadmap</a>
-            <a href="https://openstax.org/subjects" class="button purple-button" target="_blank">A good E-Book for education.</a>
+            <a href="https://openstax.org/subjects" class="button purple-button" target="blank">A good E-Book for education.</a>
             <a href="credit/credit.html" class="button">Credit</a>
         </section>
     </main>
@@ -53,6 +54,7 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS("particles-js", {
+            // Configuration options for particles
             particles: {
                 number: { value: 80, density: { enable: true, value_area: 800 } },
                 color: { value: "#ffffff" },
