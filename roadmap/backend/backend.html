@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Backend Developer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+        <div class="roadmap-item" data-category="required">
+            <h3>Operating System and General Knowledge</h3>
+            <ul>
+                <li>Terminal Usage</li>
+                <li>How OSs work in General</li>
+                <li>Process Management</li>
+                <li>Threads and Concurrency</li>
+                <li>Memory Management</li>
+                <li>Interprocess Communication</li>
+                <li>I/O Management</li>
+                <li>POSIX Basics</li>
+                <li>Networking Concepts</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Programming Language</h3>
+            <ul>
+                <li>Pick a Language: Python, Java, Go, Ruby, C#, PHP</li>
+                <li>Language-specific Ecosystem and Tools</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Version Control Systems</h3>
+            <ul>
+                <li>Basic Git Usage</li>
+                <li>Repo Hosting Services (GitHub, GitLab, Bitbucket)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Database Management Systems</h3>
+            <ul>
+                <li>Relational Databases (MySQL, PostgreSQL)</li>
+                <li>NoSQL Databases (MongoDB, Cassandra)</li>
+                <li>ORMs</li>
+                <li>ACID</li>
+                <li>Transactions</li>
+                <li>N+1 Problem</li>
+                <li>Database Normalization</li>
+                <li>Indices and how they work</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>APIs</h3>
+            <ul>
+                <li>REST</li>
+                <li>JSON APIs</li>
+                <li>SOAP</li>
+                <li>gRPC</li>
+                <li>Authentication (JWT, OAuth)</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Caching</h3>
+            <ul>
+                <li>CDN</li>
+                <li>Server Side Caching (Redis, Memcached)</li>
+                <li>Client Side Caching</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Web Security Knowledge</h3>
+            <ul>
+                <li>HTTPS</li>
+                <li>CORS</li>
+                <li>Content Security Policy</li>
+                <li>OWASP Security Risks</li>
+                <li>SSL/TLS</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="required">
+            <h3>Testing</h3>
+            <ul>
+                <li>Unit Testing</li>
+                <li>Integration Testing</li>
+                <li>Functional Testing</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>CI / CD</h3>
+            <ul>
+                <li>Continuous Integration</li>
+                <li>Continuous Delivery</li>
+                <li>Continuous Deployment</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Design and Development Principles</h3>
+            <ul>
+                <li>SOLID</li>
+                <li>KISS</li>
+                <li>YAGNI</li>
+                <li>DRY</li>
+                <li>Domain Driven Design</li>
+                <li>Test Driven Development</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Architectural Patterns</h3>
+            <ul>
+                <li>Monolithic Apps</li>
+                <li>Microservices</li>
+                <li>SOA</li>
+                <li>Serverless</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Search Engines</h3>
+            <ul>
+                <li>Elasticsearch</li>
+                <li>Solr</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Message Brokers</h3>
+            <ul>
+                <li>RabbitMQ</li>
+                <li>Kafka</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Containerization vs Virtualization</h3>
+            <ul>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>LXC</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>GraphQL</h3>
+            <ul>
+                <li>Apollo</li>
+                <li>Relay Modern</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Graph Databases</h3>
+            <ul>
+                <li>Neo4j</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>WebSockets</h3>
+            <ul>
+                <li>WebSocket Protocol</li>
+                <li>Real-time Communication</li>
+                <li>Socket.io</li>
+                <li>WebSocket Libraries (language-specific)</li>
+                <li>WebSocket Security</li>
+                <li>Scaling WebSocket Connections</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Web Servers</h3>
+            <ul>
+                <li>Nginx</li>
+                <li>Apache</li>
+                <li>Caddy</li>
+                <li>MS IIS</li>
+            </ul>
+        </div>
+
+        <div class="roadmap-item" data-category="optional">
+            <h3>Building for Scale</h3>
+            <ul>
+                <li>Mitigation Strategies</li>
+                <li>Horizontal vs Vertical Scaling</li>
+                <li>Building with Observability in mind</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <script src="backend.js"></script>
+</body>
+</html>
