@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Developer Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Blockchain Developer Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Blockchain Fundamentals -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Blockchain Fundamentals</h3>
+                <ul>
+                    <li>What is Blockchain?</li>
+                    <li>Blockchain vs. Traditional Databases</li>
+                    <li>Consensus Algorithms (Proof of Work, Proof of Stake, etc.)</li>
+                    <li>Cryptography Basics (Hashes, Public/Private Keys)</li>
+                    <li>Decentralization Concepts</li>
+                </ul>
+            </div>
+
+            <!-- Cryptocurrencies & Tokens -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Cryptocurrencies & Tokens</h3>
+                <ul>
+                    <li>Bitcoin and Ethereum Overview</li>
+                    <li>Smart Contracts and DApps</li>
+                    <li>Token Standards (ERC-20, ERC-721, BEP-20)</li>
+                    <li>Stablecoins</li>
+                    <li>Initial Coin Offerings (ICO)</li>
+                </ul>
+            </div>
+
+            <!-- Distributed Ledger Technologies (DLT) -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Distributed Ledger Technologies (DLT)</h3>
+                <ul>
+                    <li>Understanding Ledgers and Transactions</li>
+                    <li>Permissioned vs. Permissionless Blockchains</li>
+                    <li>Public, Private, and Consortium Blockchains</li>
+                    <li>Popular Platforms (Hyperledger, Corda)</li>
+                    <li>Interoperability</li>
+                </ul>
+            </div>
+
+            <!-- Smart Contracts Development -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Smart Contracts Development</h3>
+                <ul>
+                    <li>Smart Contracts Basics</li>
+                    <li>Solidity Programming Language</li>
+                    <li>Smart Contract Lifecycle (Development, Deployment)</li>
+                    <li>Contract Testing (Truffle, Hardhat)</li>
+                    <li>Common Vulnerabilities (Reentrancy, Overflow, etc.)</li>
+                </ul>
+            </div>
+
+            <!-- Decentralized Applications (DApps) -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Decentralized Applications (DApps)</h3>
+                <ul>
+                    <li>Architecture of DApps</li>
+                    <li>Interfacing with Ethereum (Web3.js, Ethers.js)</li>
+                    <li>Smart Contract Interaction</li>
+                    <li>Decentralized Storage (IPFS, Arweave)</li>
+                    <li>User Authentication in DApps</li>
+                </ul>
+            </div>
+
+            <!-- Blockchain Development Platforms -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Blockchain Development Platforms</h3>
+                <ul>
+                    <li>Ethereum</li>
+                    <li>Binance Smart Chain (BSC)</li>
+                    <li>Polkadot</li>
+                    <li>Hyperledger</li>
+                    <li>Solana</li>
+                </ul>
+            </div>
+
+            <!-- Blockchain Security -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Blockchain Security</h3>
+                <ul>
+                    <li>Security Best Practices</li>
+                    <li>Auditing Smart Contracts (OpenZeppelin, CertiK)</li>
+                    <li>Penetration Testing Tools for DApps</li>
+                    <li>Security of Private Keys</li>
+                    <li>Decentralized Finance (DeFi) Risks</li>
+                </ul>
+            </div>
+
+            <!-- Decentralized Finance (DeFi) -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Decentralized Finance (DeFi)</h3>
+                <ul>
+                    <li>Overview of DeFi</li>
+                    <li>Automated Market Makers (AMMs)</li>
+                    <li>Decentralized Exchanges (DEXs)</li>
+                    <li>Liquidity Pools & Yield Farming</li>
+                    <li>Lending and Borrowing in DeFi</li>
+                </ul>
+            </div>
+
+            <!-- Scaling Solutions for Blockchain -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Scaling Solutions for Blockchain</h3>
+                <ul>
+                    <li>Layer 2 Solutions (Rollups, Plasma)</li>
+                    <li>Sidechains</li>
+                    <li>Sharding</li>
+                    <li>State Channels</li>
+                    <li>Interoperability Protocols (Polkadot, Cosmos)</li>
+                </ul>
+            </div>
+
+            <!-- Cryptography in Blockchain -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Cryptography in Blockchain</h3>
+                <ul>
+                    <li>Elliptic Curve Cryptography (ECC)</li>
+                    <li>Zero-Knowledge Proofs (ZKP)</li>
+                    <li>Merkle Trees</li>
+                    <li>Hashing Algorithms (SHA-256, Keccak)</li>
+                    <li>Homomorphic Encryption</li>
+                </ul>
+            </div>
+
+            <!-- Governance in Blockchain -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Governance in Blockchain</h3>
+                <ul>
+                    <li>On-Chain vs Off-Chain Governance</li>
+                    <li>Decentralized Autonomous Organizations (DAOs)</li>
+                    <li>Governance Tokens</li>
+                    <li>Voting Mechanisms</li>
+                    <li>Forks (Hard Fork, Soft Fork)</li>
+                </ul>
+            </div>
+
+            <!-- NFTs (Non-Fungible Tokens) -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>NFTs (Non-Fungible Tokens)</h3>
+                <ul>
+                    <li>What are NFTs?</li>
+                    <li>NFT Standards (ERC-721, ERC-1155)</li>
+                    <li>Minting NFTs</li>
+                    <li>NFT Marketplaces</li>
+                    <li>Use Cases of NFTs (Art, Gaming, Real Estate)</li>
+                </ul>
+            </div>
+
+            <!-- Certifications for Blockchain Developers -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Certifications for Blockchain Developers</h3>
+                <ul>
+                    <li>Certified Blockchain Developer (CBD)</li>
+                    <li>Ethereum Developer Certification</li>
+                    <li>Blockchain Council Certifications</li>
+                    <li>Coursera/EdX Blockchain Courses</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src="blockchain.js"></script>
+</body>
+</html>
