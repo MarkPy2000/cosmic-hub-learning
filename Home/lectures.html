@@ -1,0 +1,115 @@
+<!-- lectures.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures - My Lecture Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add particle effect -->
+    <div id="particles-js"></div>
+
+    <!-- Add shooting stars -->
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <!-- Add cosmic dust -->
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+
+    <header>
+        <h1 class="glitch-text" data-text="Lectures">Lectures</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="glitch-text" data-text="Home">Home</a></li>
+                <li><a href="../pages/python.html" class="glitch-text" data-text="Python">Python</a></li>
+                <li><a href="../pages/C.html" class="glitch-text" data-text="C">C</a></li>
+                <li><a href="../pages/Cpp.html" class="glitch-text" data-text="C++">C++</a></li>
+                <li><a href="../pages/java.html" class="glitch-text" data-text="Java">Java</a></li>
+                <li><a href="lectures.html" class="glitch-text" data-text="Lectures">Lectures</a></li>
+                <li><a href="../pages/roadmap.html" class="glitch-text" data-text="Roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="parallax-section nebula-bg">
+        <section id="lectures">
+            <div class="container">
+                <h2 class="welcome-message">Lectures Page</h2>
+    
+                <!-- Think Image Container -->
+                <div class="think-container">
+                    <a href="https://gptbot.io/chatgpt-prompts/" target="_blank">
+                        <img src="think.png" alt="Think" class="think-image">
+                    </a>
+                    <!-- Comment Section -->
+                    <div class="comment">
+                        <p>GPT - PROMPT</p>
+                    </div>
+                </div>
+
+                <!-- Lecture Form -->
+                <form id="lectureForm" class="frame-cover">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+
+                    <label for="speaker">Speaker:</label>
+                    <input type="text" id="speaker" name="speaker" required>
+
+                    <label for="videoLink">Video Link (optional):</label>
+                    <input type="url" id="videoLink" name="videoLink">
+
+                    <label for="normalLink">Normal Link (optional):</label>
+                    <input type="url" id="normalLink" name="normalLink">
+
+                    <label for="tag">Tag:</label>
+                    <select id="tag" name="tag" required>
+                        <option value="Education">Education</option>
+                        <option value="General">General</option>
+                        <option value="Interested">Interested</option>
+                    </select>
+
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div id="tagFilters" class="frame-cover">
+                    <button class="tag-filter" data-tag="all">All</button>
+                    <button class="tag-filter" data-tag="Education">Education</button>
+                    <button class="tag-filter" data-tag="General">General</button>
+                    <button class="tag-filter" data-tag="Interested">Interested</button>
+                </div>
+
+                <div id="lectureList" class="frame-cover"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <!-- Add particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 1, direction: "none", random: true, out_mode: "out" }
+            }
+        });
+    </script>
+</body>
+</html>
