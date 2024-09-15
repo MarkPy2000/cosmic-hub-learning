@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Roadmap</title>
+    <link rel="stylesheet" href="../roadmap.css">
+</head>
+<body>
+    <div class="roadmap-container">
+        <h1>Data Analyst Roadmap</h1>
+        <div class="roadmap-controls">
+            <input type="text" class="roadmap-search" placeholder="Search roadmap...">
+            <div class="filter-container">
+                <button onclick="filterItems('required')">Required</button>
+                <button onclick="filterItems('optional')">Optional</button>
+                <button onclick="filterItems('all')">All</button>
+            </div>
+        </div>
+        <div class="roadmap">
+            <!-- Core Data Analysis Concepts -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Core Data Analysis Concepts</h3>
+                <ul>
+                    <li>Data Types (Quantitative, Qualitative)</li>
+                    <li>Descriptive vs. Inferential Statistics</li>
+                    <li>Data Cleaning and Preprocessing</li>
+                    <li>Data Visualization</li>
+                    <li>Exploratory Data Analysis (EDA)</li>
+                </ul>
+            </div>
+            
+            <!-- Statistics & Mathematics -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Statistics & Mathematics</h3>
+                <ul>
+                    <li>Probability Theory</li>
+                    <li>Hypothesis Testing</li>
+                    <li>Linear Regression</li>
+                    <li>Statistical Inference</li>
+                    <li>Correlation vs. Causation</li>
+                </ul>
+            </div>
+
+            <!-- Data Collection & Wrangling -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Collection & Wrangling</h3>
+                <ul>
+                    <li>Data Sources (APIs, Databases, Web Scraping)</li>
+                    <li>Data Cleaning (Handling missing data, duplicates, outliers)</li>
+                    <li>Data Transformation (Normalization, Encoding)</li>
+                    <li>Data Aggregation</li>
+                </ul>
+            </div>
+
+            <!-- Data Visualization Tools -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Visualization Tools</h3>
+                <ul>
+                    <li>Tableau</li>
+                    <li>Power BI</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Google Data Studio</li>
+                </ul>
+            </div>
+
+            <!-- Programming Languages for Data Analysis -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Programming Languages for Data Analysis</h3>
+                <ul>
+                    <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+                    <li>R Programming (dplyr, ggplot2)</li>
+                    <li>SQL (Structured Query Language)</li>
+                    <li>Excel (Formulas, Pivot Tables, VBA)</li>
+                </ul>
+            </div>
+
+            <!-- Business Intelligence (BI) Tools -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Business Intelligence (BI) Tools</h3>
+                <ul>
+                    <li>Power BI</li>
+                    <li>Looker</li>
+                    <li>Google Analytics</li>
+                    <li>Qlik Sense</li>
+                    <li>Domo</li>
+                </ul>
+            </div>
+
+            <!-- Data Modeling -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Modeling</h3>
+                <ul>
+                    <li>Dimensional Modeling</li>
+                    <li>Entity-Relationship (ER) Diagrams</li>
+                    <li>Normalization and Denormalization</li>
+                    <li>Star Schema, Snowflake Schema</li>
+                </ul>
+            </div>
+
+            <!-- Machine Learning for Data Analysis -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Machine Learning for Data Analysis</h3>
+                <ul>
+                    <li>Linear & Logistic Regression</li>
+                    <li>Clustering (K-means, Hierarchical)</li>
+                    <li>Classification (Decision Trees, Random Forests)</li>
+                    <li>Principal Component Analysis (PCA)</li>
+                    <li>Dimensionality Reduction Techniques</li>
+                </ul>
+            </div>
+
+            <!-- Advanced Analytics & Big Data -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Advanced Analytics & Big Data</h3>
+                <ul>
+                    <li>Big Data Tools (Hadoop, Spark)</li>
+                    <li>Time Series Analysis</li>
+                    <li>Forecasting</li>
+                    <li>Natural Language Processing (NLP)</li>
+                    <li>Data Streaming (Kafka, Flink)</li>
+                </ul>
+            </div>
+
+            <!-- Reporting & Communication Skills -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Reporting & Communication Skills</h3>
+                <ul>
+                    <li>Creating Dashboards</li>
+                    <li>Data Storytelling</li>
+                    <li>Creating Effective Reports</li>
+                    <li>Stakeholder Communication</li>
+                </ul>
+            </div>
+
+            <!-- Data Ethics & Governance -->
+            <div class="roadmap-item" data-category="required">
+                <h3>Data Ethics & Governance</h3>
+                <ul>
+                    <li>Data Privacy (GDPR, CCPA)</li>
+                    <li>Bias in Data Analysis</li>
+                    <li>Ethical Data Handling</li>
+                    <li>Data Governance Frameworks</li>
+                </ul>
+            </div>
+
+            <!-- Cloud Platforms for Data Analysis -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Cloud Platforms for Data Analysis</h3>
+                <ul>
+                    <li>AWS (Amazon Web Services)</li>
+                    <li>Google Cloud Platform (GCP)</li>
+                    <li>Microsoft Azure</li>
+                    <li>Snowflake</li>
+                </ul>
+            </div>
+
+            <!-- Certifications for Data Analysts -->
+            <div class="roadmap-item" data-category="optional">
+                <h3>Certifications for Data Analysts</h3>
+                <ul>
+                    <li>Microsoft Certified: Data Analyst Associate</li>
+                    <li>Google Data Analytics Professional Certificate</li>
+                    <li>Certified Analytics Professional (CAP)</li>
+                    <li>SAS Certified Data Scientist</li>
+                    <li>IBM Data Science Professional Certificate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="ds.js"></script>
+</body>
+</html>
