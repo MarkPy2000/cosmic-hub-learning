@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Themed Credits</title>
+    <link rel="stylesheet" href="credit.css">
+</head>
+<body>
+    <!-- Background Stars -->
+    <div class="stars" id="star-container"></div>
+    
+    <!-- Header Section -->
+    <header class="space-header">
+        <h1>Credits</h1>
+        <p>Source of all resources used</p>
+    </header>
+    
+    <!-- Credits Section -->
+    <section class="info-section">
+        <div class="section-content">
+            <h2>Computer Science Resources</h2>
+            <ul id="creditsList">
+                <li>edX (Harvard University - CS50)</li>
+                <li>Scrimba</li>
+                <li>Angular University</li>
+                <li>Vue.js Official Website</li>
+                <li>freeCodeCamp</li>
+                <li>Node.js Official Documentation</li>
+                <li>TypeScript Official Documentation</li>
+                <li>SQLBolt</li>
+                <li>GitHub (System Design Primer by donnemartin)</li>
+                <li>Java Programming MOOC (University of Helsinki)</li>
+                <li>LearnCpp.com</li>
+                <li>Go Official Documentation</li>
+                <li>Rust Programming Language Official Documentation</li>
+                <li>Apollo GraphQL</li>
+                <li>Smashing Magazine</li>
+                <li>React Native Official Website</li>
+                <li>Amazon Web Services Training and Certification</li>
+                <li>OWASP Code Review Guide</li>
+                <li>Docker Official Documentation</li>
+                <li>Linux Journey</li>
+                <li>MongoDB University</li>
+                <li>OpenAI Documentation</li>
+                <li>TeckStack</li>
+                <li>SkillValue</li>
+                <li>Roadmap.sh</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="space-footer">
+        <p>© 2024 Interactive Learning. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Star Animation -->
+    <script src="credit.js"></script>
+
+    <script>
+        // Create stars dynamically
+        const starsContainer = document.querySelector('.stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
