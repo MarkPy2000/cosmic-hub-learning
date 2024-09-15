@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Domain Names</title>
+    <link rel="stylesheet" href="domain.css">
+</head>
+<body>
+    <header class="space-header">
+        <h1>Understanding Domain Names</h1>
+        <p>Learn the basics of domain names and their importance</p>
+    </header>
+    <main class="info-section">
+        <section class="section-content">
+            <h2>What is a Domain Name?</h2>
+            <p>A domain name is the address of a website. It's the name you type into a web browser to access that specific website. For example, the domain name for Google is <a href="https://google.com" target="_blank">google.com</a>.</p>
+            <p><strong>Why Domain Names Matter</strong></p>
+            <p>Domain names are crucial because they make it easy for people to remember the address of your website. Imagine having to remember the IP address for every website you wanted to visit—it would be quite cumbersome.</p>
+        </section>
+
+        <section class="section-content">
+            <h2>What Characters Can Go in a Domain Name?</h2>
+            <p>A domain name can consist of any combination of English alphabet letters (A-Z) and numbers (0-9). You can also use the dash character. For example, Class Central's domain was originally <a href="https://class-central.com" target="_blank">class-central.com</a>, but they later acquired <a href="https://classcentral.com" target="_blank">classcentral.com</a> without the dash, which looks more professional and is easier to type.</p>
+            <p>Domains can be combined with various extensions such as <code>.com</code>, <code>.net</code>, and <code>.org</code>. These extensions are known as Top-Level Domains (TLDs).</p>
+        </section>
+
+        <section class="section-content">
+            <h2>What is a TLD?</h2>
+            <p><strong>TLD</strong> stands for Top-Level Domain. When the Domain Name System (DNS) was first introduced in the 1980s, there were only a few TLDs: <code>.com</code>, <code>.org</code>, and <code>.net</code>.</p>
+            <p>In the US, there are also restricted TLDs:</p>
+            <ul>
+                <li><code>.edu</code> for accredited universities</li>
+                <li><code>.gov</code> for US government organizations</li>
+                <li><code>.mil</code> for the US military</li>
+            </ul>
+            <p>Many countries have their own TLDs. For example, the UK uses <code>.uk</code> and <code>.co.uk</code>. The <code>.io</code> TLD, initially reserved for the British Indian Ocean Territory, is popular with tech companies because "IO" resembles "Input/Output."</p>
+            <p>Other popular TLDs include <code>.co</code>, which is similar to <code>.com</code> but often used for startups.</p>
+            <p>Note that <code>.org</code> was originally intended for nonprofits, but anyone can register a <code>.org</code> domain. For example, <a href="https://craigslist.org" target="_blank">Craigslist.org</a> is a for-profit organization. So, just because a company uses a <code>.org</code> domain doesn’t necessarily mean it is a tax-exempt nonprofit. (By the way, freeCodeCamp is a tax-exempt nonprofit.)</p>
+        </section>
+
+        <section class="section-content">
+            <h2>How Do You Register a Domain Name?</h2>
+            <p>When you register a domain name, you are reserving that name for your own use. No one else can use that domain name as long as you continue to renew it, typically on an annual basis. Renewal fees can range from $12 for a <code>.com</code> domain to hundreds of dollars for some specialty domains.</p>
+            <p>Domain names are usually registered through domain registrars such as Google Domains, Name.com, or Namecheap. The registration process is generally straightforward.</p>
+            <p>After registering a domain name, you'll need to point it to your web hosting provider or your own servers to direct traffic to your website.</p>
+        </section>
+    </main>
+    
+    <footer class="space-footer">
+        <p>&copy; 2024 Cosmic Web Insights</p>
+    </footer>
+    
+    <div class="stars"></div>
+
+    <script src="domain.js"></script>
+
+    <script>
+        // Create stars dynamically
+        const starsContainer = document.querySelector('.stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            star.style.animationDuration = `${Math.random() * 5 + 5}s`;
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
