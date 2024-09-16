@@ -1,6 +1,6 @@
 # Cosmic Learning Hub 🌌
 
-Welcome to the Cosmic Learning Hub, where technologyd programming education meets an adventurous space exploration theme! Emb on a journey through the digital cosmos and expand your tech knowledge.
+Welcome to the Cosmic Learning Hub, where technologyd programming education meets an adventurous space exploration theme! On a journey through the digital cosmos and expand your tech knowledge.
 
 ## Table of Contents
 - [Introduction](#introduction)
