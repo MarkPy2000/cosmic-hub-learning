@@ -886,3 +886,96 @@ form input[type="file"]:focus {
   100% { transform: translate(0); }
 }
 
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 768px) {
+  /* Adjust header for mobile */
+  header {
+    padding: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Adjust navigation for mobile */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 5px 10px;
+  }
+
+  /* Adjust main content for mobile */
+  main {
+    padding: 20px 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Adjust form for mobile */
+  form {
+    padding: 20px;
+  }
+
+  /* Adjust lecture list for mobile */
+  #lectureList {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust think image for mobile */
+  .think-container {
+    right: 10px;
+  }
+
+  .think-image {
+    width: 100px;
+  }
+
+  .comment {
+    right: 120px;
+    width: 150px;
+  }
+
+  /* Adjust button sizes for mobile */
+  .button, .roadmap-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* Adjust headings for mobile */
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust frame cover for mobile */
+  .frame-cover {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+  nav ul li a,
+  .button,
+  .roadmap-button,
+  form input[type="text"],
+  form textarea,
+  form input[type="url"],
+  form input[type="file"],
+  form button[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
