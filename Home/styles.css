@@ -729,14 +729,14 @@ h1, h2, h3 {
 
 /* Typing animation for welcome message */
 .welcome-message {
-  overflow: hidden;
-  border-right: .15em solid var(--space-accent);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    overflow: hidden;
+    border-right: .15em solid var(--space-accent);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
@@ -888,6 +888,25 @@ form input[type="file"]:focus {
 
 /* Mobile-friendly adjustments */
 @media screen and (max-width: 768px) {
+
+  .welcome-message {
+        font-size: 1.2rem; /* Reduce font size on mobile */
+        white-space: normal; /* Allow text to wrap */
+        border-right: none; /* Remove the blinking cursor effect */
+        animation: none; /* Remove the typing animation */
+        text-align: center; /* Center the text */
+        letter-spacing: normal; /* Reset letter spacing */
+    }
+
+    .frame-cover {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #home h2 {
+        font-size: 1.5rem; /* Further reduce size if needed */
+        line-height: 1.3; /* Improve readability */
+
   /* Adjust header for mobile */
   header {
     padding: 0.5rem;
@@ -933,6 +952,10 @@ form input[type="file"]:focus {
     grid-template-columns: 1fr;
   }
 
+  .lecture-item {
+    padding: 15px;
+  }
+
   /* Adjust think image for mobile */
   .think-container {
     right: 10px;
@@ -962,6 +985,30 @@ form input[type="file"]:focus {
   .frame-cover {
     margin: 10px;
     padding: 15px;
+  }
+
+  /* Prevent text from being cut off */
+  .lecture-item h3,
+  .lecture-item p,
+  .comment p,
+  .developer-roadmap h3,
+  #python-guide h2, #python-guide h3,
+  #java-guide h2, #java-guide h3,
+  #c-guide h2, #c-guide h3,
+  #cpp-guide h2, #cpp-guide h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Adjust font sizes for better readability on mobile */
+  body {
+    font-size: 14px;
+  }
+
+  .lecture-item p,
+  .comment p {
+    font-size: 0.9rem;
   }
 }
 
