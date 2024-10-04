@@ -8,7 +8,7 @@ Welcome to the Cosmic Learning Hub, where technologyd programming education meet
 - [Introduction](#introduction)
 - [Features](#features)
   - Home Page
-  - [Lectures Page](#lectures-page)
+  - Lectures Page
   - [Style](#style)- [Developer Roadmaps](#developer-roadmaps)
   - [Additional Pages](#additional-pages)
 - [Technologies Used](#technologies-used)
